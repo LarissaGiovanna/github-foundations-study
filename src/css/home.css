@@ -117,7 +117,7 @@ body{
         background-color: var(--gray);
     }
 
-    .module img{
+    .module img, .exercice-module img, .test-module img, .exam-info img, .explanation-container img{
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -151,5 +151,30 @@ body{
     .explanation-container{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .pricing{
+        display: flex;
+        flex-direction: column;
+        gap: 3dvw;
+        align-items: center;
+        background-color: var(--background);
+        padding: 3dvw;
+        border-radius: 10px;
+    }
+
+    .pricing i{
+        font-size: 8dvw;
+        color: var(--yellow);
+        padding: 4px 6px;
+    }
+
+    .exam-info .start-link{
+        background-color: var(--blue);
+        color: var(--white);
+        padding: 3dvw 6dvw;
+        font-size: 4dvw;
+        text-decoration: none;
+        margin-top: 10px;
     }
 }
