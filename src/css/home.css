@@ -36,8 +36,17 @@ body{
 
     .title {
         color: white;
-        font-size: 3.7dvw;
+        font-size: 3dvw;
+        font-family: var(--mona-serif);
+        font-weight: 500;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+    }
 
+    .title img{
+        height: auto;
+        width: 100%;
     }
 
     .menu .fa {
