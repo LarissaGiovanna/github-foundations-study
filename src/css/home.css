@@ -86,7 +86,7 @@ body{
         text-align: center;
     }
     /* modules */
-    .start_here-container{
+    .start_here-container, .exercice-container, .exam-container, .why-container {
         width: 100%;
         height: auto;
         display: flex;
@@ -96,14 +96,14 @@ body{
         margin-top: 20dvw;
     }
 
-    .start_here-container h2{
+    .start_here-container h2, .exercice-container h2, .exam-container h2, .why-container h2{
         width: 90%;
         font-size: 5dvw;
         text-align: left;
         margin-bottom: 2dvw;
     }
 
-    .module {
+    .module, .exercice-module, .test-module, .exam-info, .explanation-container{
         width: 90%;
         max-width: 90%;
         background-color: var(--background);
@@ -113,28 +113,32 @@ body{
         font-size: 4dvw;
     }
 
+    .exam-info, .explanation-container{
+        background-color: var(--gray);
+    }
+
     .module img{
         width: 100%;
         height: auto;
         border-radius: 10px;
     }
 
-    .module .module-text{
+    .module .module-text, .exercice-text, .test-text, .exam-info, .pricing, .explanation-container{
         display: flex;
         flex-direction: column;
         gap: 3dvw;
     }
 
-    .module h3{
+    h3{
         margin-bottom: 1dvw;
     }
 
-    .module p{
+    .module p, .exercice-module p, .test-module p{
         margin-top: 2dvw;
         line-height: 1.5;
     }
 
-    .module a{
+    .module a, .exercice-module a, .test-module a, .exam-info a{
         background-color: var(--white);
         padding: 1dvw 3dvw;
         border-radius: 5px;
@@ -144,4 +148,8 @@ body{
         width: fit-content;
     }
 
+    .explanation-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
