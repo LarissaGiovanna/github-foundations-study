@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 :root{
     /* colors */
     --background: #24292e;
@@ -6,4 +7,5 @@
     --gray: #040f1a;
     /* fonts */
     --font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-mona-sans: 'Mona Sans', sans-serif;
 }
