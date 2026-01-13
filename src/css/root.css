@@ -70,4 +70,47 @@ body {
         color: white;
         font-size: 5dvw;
     }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 12dvh;
+        background-color: var(--background);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 3dvw;
+        margin-top: 3dvh;
+    }
+
+    footer .links{
+        display: flex;
+        gap: 10dvw;
+        margin-bottom: 1dvw;
+    }
+
+    .links section{
+        display: flex;
+        flex-direction: column;
+        gap: 1dvw;
+    }
+
+    .links a{
+        color: var(--white);
+        text-decoration: none;
+    }
+
+    .links a:hover{
+        text-decoration: underline;
+    }
+
+    footer p{
+        font-size: 3dvw;
+        color: var(--light-gray);
+        text-align: start;
+        font-style: italic;
+        width: 70%;
+        margin-top: 2dvw;
+    }
 }
