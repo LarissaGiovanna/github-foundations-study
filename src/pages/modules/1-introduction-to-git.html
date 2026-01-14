@@ -39,6 +39,365 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Introdução ao Git e GitHub</h1>
+            <section id="git">
+                <h2>Git</h2>
+                <h3>Controle de versão</h3>
+                <h4>O que é?</h4>
+                <p>Um sistema de controle de versão ou Version Control System (VCS) é um programa que possui como
+                    objetivo controlar as versões de um projeto.</p>
+                <h4>Um pouco de história...</h4>
+                <p>Antigamente, um projeto era hospedado em apenas um servidor local, correndo o risco de se caso o
+                    servidor der algum problema, todo o projeto seria perdido. Com o <b>Git</b>, as cópias do projeto
+                    são clonadas localmente na máquina de cada desenvolvedor.</p>
+                <h3>O que é Git?</h3>
+                <p>O Git é um sistema de controle de versão distribuído que permite que desenvolvedores rastreiem
+                    mudanças em arquivos e colaborem em projetos de software. Ele foi criado por Linus Torvalds em 2005
+                    para ajudar no desenvolvimento do kernel do Linux. O Git permite que múltiplos desenvolvedores
+                    trabalhem simultaneamente em um projeto, mantendo um histórico completo de todas as alterações
+                    feitas.</p>
+                    <nav class="buttons">
+                        <button class="next" onclick="next('git','common-terms-git')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="common-terms-git">
+                <h2>Termos comuns</h2>
+                <p>Alguns termos que são usados comumente no Git:</p>
+                <ul>
+                    <li><b>Working Tree</b> ou <b>Árvore de Trabalho</b>: Diretórios e arquivos que contém o projeto que
+                        está sendo trabalhado/desenvolvido no momento.</li>
+                    <li><b>Repositório (repo)</b> O diretório ou a pasta localizado no topo da árvore de trabalho e é
+                        onde o Git guarda todo o histórico do proketo. Basicamente a pasta principal do projeto. Um
+                        <i>bare repository</i> é um repositório que não faz parte de uma árvore de trabalho e é usado
+                        para compartilhamento ou backup e é geralmente salvo com a extensão <i>.git</i></b>
+                    </li>
+                    <li><b>Hash</b>: É uma função que retorna um número e que representa os conteúdos de um arquivo.
+                        Como se fosse um ID.</li>
+                    <li><b>Commit</b>: A tradução pode ser como comprometer-se ou entregar. No Git, siginifica pulblicar
+                        ou enviar alguma coissa ou mudança para que os outros possam ver.</li>
+                    <li><b>Branch</b>: Significa ramificação e no Git, representa uma série ou um ramo com vários
+                        commits. O commit mais recente em uma branch é chamado de <i>Head</i> e a branch
+                        padrão/principal é chamada de <code>main</code> ou <code>master</code>. O <i>head</i> ou o
+                        commit mais recente da branch que você está atual é chamado de <code>HEAD</code>.</li>
+                    <li><b>Remoto</b>: Um remoto é uma referência a um repositório Git. É como se tivesse um repositório
+                        remoto e outro local. O nome padrão é <code>origin</code>.</li>
+                </ul>
+                <nav class="buttons">
+                    <button class="back" onclick="back('common-terms-git','git')">Anterior</button>
+                        <button class="next" onclick="next('common-terms-git','git-github')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="git-github">
+                <h2>Git vs GitHub</h2>
+                <p><b>Git</b> é um sistema de controle de versão distribuído (Distributed Version Control System
+                    (DVCS)).</p>
+                <p><b>GitHub</b> é uma plataforma em nuvem que hospeda os repositórios Git.</p>
+                <h3>Comandos</h3>
+                <ul>
+                    <li><b>Login</b>: Obrigatório para poder enviar as alterações para o GitHub.
+                        <section class="terminal">
+                            <p><code>git config --global user.name "Seu Nome"</code></p>
+                            <p><code>git config --global user.email "seu.email@example.com"</code></p>
+                        </section>
+                    </li>
+                    <li><b>Verificar versão</b>: Exibe a versão do Git instalada.
+                        <section class="terminal">
+                            <p><code>git --version</code></p>
+                        </section>
+                    </li>
+                    <li><b>Listar configurações globais</b>:
+                        <section class="terminal">
+                            <p><code>git config --list</code></p>
+                        </section>
+                    </li>
+                    <li><b>Inicializar um repositório Git</b>: Caso você já tenha uma pasta no seu pc e queira
+                        transformar ela em um repositório Git.
+                        <section class="terminal">
+                            <p><code>git init -b main</code></p>
+                            <p><code>//inicia e cria uma branch chamada main</code></p>
+                        </section>
+                    </li>
+                    <li><b>Verificar status da árvore de trabalho</b>:
+                        <section class="terminal">
+                            <p><code>git status</code></p>
+                        </section>
+                    </li>
+                    <li><b>Ajuda</b>: Lista todos os comandos git e dá uma breve explicação do que cada um faz.
+                        <section class="terminal">
+                            <p><code>git help</code></p>
+                            <p><code>// ou</code></p>
+                            <p><code>git "comando" help</code></p>
+                            <p><code>// mostra ajuda sobre o comando em específico</code></p>
+                        </section>
+                    </li>
+                    <li><b>Preparar alterações para serem <i>commitadas</i></b>:Adiciona/rastreia um ou mais arquivos
+                        para serem preparados para o commit.
+                        <section class="terminal">
+                            <p><code>git add "nome-do-arquivo"</code></p>
+                            <p><code>// adiciona um arquivo específico</code></p>
+                            <p><code>git add .</code></p>
+                            <p><code>// adiciona todos os arquivos modificados</code></p>
+                        </section>
+                    </li>
+                    <li><b>Fazer um commit</b>: Salva as alterações feitas no repositório local.
+                        <section class="terminal">
+                            <p><code>git commit -m "mensagem-descritiva"</code></p>
+                            <p><code>// faz o commit com uma mensagem descritiva</code></p>
+                        </section>
+                    </li>
+                    <li><b>Ver logs</b>:
+                        <section class="terminal">
+                            <p><code>git log</code></p>
+                            <p><code>// mostra o histórico de commits</code></p>
+                        </section>
+                    </li>
+                    <li><b>Ver o histórico de commits de um arquivo em específico</b>:
+                        <section class="terminal">
+                            <p><code>git blame "nome-do-arquivo"</code></p>
+                            <p><code>// mostra o histórico de commits do arquivo especificado, com hora, data e autor de cada linha</code>
+                            </p>
+                        </section>
+                    </li>
+                </ul>
+                <nav class="buttons">
+                    <button class="back" onclick="back('git-github','common-terms-git')">Anterior</button>
+                        <button class="next" onclick="next('git-github','github')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="github">
+                <h2>GitHub</h2>
+                <p>O GitHub é uma plataforma de hospedagem de código-fonte e controle de versão que utiliza o Git como
+                    sistema de controle de versão. Ele permite que desenvolvedores colaborem em projetos, compartilhem
+                    código e gerenciem versões de software de forma eficiente.</p>
+                <p>Veremos a partir de agora as funcionalidades principais do GitHub.</p>
+
+                <h3>Repositórios</h3>
+                <p>Um repositório contém todos os arquivos do seu projeto com cada alteração e histórico de versões.</p>
+                <p>Possui três tipos:</p>
+                <ul>
+                    <li>Público (qualquer um tem acesso)</li>
+                    <li>Privado (só você tem acesso)</li>
+                    <li>Interno (visível para apenas os membros da empresa/organização)</li>
+                </ul>
+                <h4>Como clonar um repositório</h4>
+                <ul>
+                    <ol>No seu repositório GitHub, tem um botão chamativo escrito <i>Code</i>. Ao apertar nele, irá ser
+                        mostrado um link que você precisa copiar.</ol>
+                    <ol>No seu terminal, na pasta onde você quer salvar o seu clone, digite assim:
+                        <section class="terminal">
+                            <p><code>git clone "url-copiada"</code></p>
+                            <p><code>// e depois:</code></p>
+                            <p><code>cd "nome_do_repositorio"</code></p>
+                        </section>
+                    </ol>
+                </ul>
+
+                <h3>Gists</h3>
+                <p>Gists é uma funcionalidade do GitHub que permite aos usuários compartilhar trechos de códigos, notas
+                    ou outras informações menores que são compartilhados em um grupo pequeno.</p>
+                <p>Geralmente são usados para compartilhar exemplos de códigos ou soluções, guardar configurações ou
+                    scripts de uso pessoal, guardar templates de algo, compartilhar logs e compartilhar trechos de
+                    código em blogs, foruns, etc.</p>
+                <p><b>OBS.:</b> Os Gists não são totalmente privados, mesmo os secretos podem ser acessados por quem tem
+                    o link.</p>
+                <p>Para clonar um Gist, é praticamente a mesma coisa de clonar um repositório comum.</p>
+
+                <h3>Wiki</h3>
+                <p>Wiki são como se fosse uma documentação de algo. Geralmente uma wiki serve para documentar as
+                    informações detalhadas do projeto, enquanto que um README seria uma leitura mais rápida e direta
+                    sobre o projeto. É praticamente a Wikipédia daquele projeto.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+
+                <h3>Preview de uma nova feature</h3>
+                <p>São funcionalidades novas que ainda estão em desenvolvimento que podem ser habilitadas caso você
+                    queira testar. É interessante dar uma olhada pois o GitHub adiciona novas funcionalidades
+                    frequentemente.</p>
+
+                <h3>Pull Requests</h3>
+                <p>Uma pull request ou PR é uma funcionalidade que permite que commits enviados por outra pessoa sejam
+                    mesclados na branch principal do projeto.</p>
+                <p>É como se fosse um fórum que a pessoa manda a alteração e fala o que fez e porque essa alteração deve
+                    ser adicionada. O administrador do repositório pode olhar isso e analisar se deve aceitar as
+                    alterações que a pessoa fez ou não.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Uma solicitação de pull (PR) compara alterações entre dois branches:</p>
+                <ul>
+                    <li><i>Comparar</i> é a branch das alterações.</li>
+                    <li><i>Base</i> ou <i>Main</i> é pra onde essas alterações vão.</li>
+                </ul>
+                <h4>Mesclar um PR</h4>
+                <p>Existem 3 opções ao você mesclar uma branch:</p>
+                <ul>
+                    <li><b><code>Create a merge commit</code>/Criar um commit de mesclagem</b>: É a função padrão onde
+                        todas as modificações são mescladas e é criado um commit dizendo que foi mesclado.</li>
+                    <li><b><code>Sqaush and merge</code>/Esmagar e mesclar</b>: Todas as modificações são mescladas mas
+                        é criado apenas um commit com todas as alterações juntas.</li>
+                    <li><b><code>Rebase and merge</code>/Rebase e mesclar</b>: As modificações são mescladas mas os
+                        commits são reaplicados na branch base, criando um histórico linear.</li>
+                </ul>
+                <h3>Issues</h3>
+                <p>Uma issue é usada para rastrear ideias, feedbacks, tarefas ou bugs/poblemas envolvendo seu trabalho
+                    no GitHub. Como se fosse um fórum onde você pode expor algo relacionado ao projeto. Diferente de uma
+                    PR, uma issue apenas expoe e o erro, ou o feed back sem modificar diretamente o código.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+
+                <h3>Discussões</h3>
+                <p>Tem assuntos que são grandes demais para serem colocados em uma issue, por isso existem as
+                    discussões, onde você pode conversar com as pessoas sobre diversos assuntos como se fosse um Reddit.
+                    No seu repositório, você pode habilitar as discussões ou não.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Cada discussão pode ser atribuída à uma categoria, entre elas:</p>
+                <ul>
+                    <li>Anúncios: Atualizações e novidades sobre o projeto.</li>
+                    <li>Geral: Tudo relacionado e relevante para o projeto.</li>
+                    <li>Ideias: Sugestões e ideias para melhorar o projeto.</li>
+                    <li>Polls: Votações.</li>
+                    <li>Q&A: Perguntas e respostas para a comunidade responder.</li>
+                    <li>Show and tell: Criações, experimentos ou testes relevantes para o projeto.</li>
+                </ul>
+                <p>Os administradores do repositorio podem administrar as disussões e podem fixar as discussões
+                    importantes no topo. Também podem marcar perguntas que foram feitas pela couminidade como
+                    respondidas.</p>
+                <p>Uma discussão também pode ser convertida para uma issue.</p>
+                <nav class="buttons">
+                    <button class="back" onclick="back('github', 'git-github')">Anterior</button>
+                        <button class="next" onclick="next('github','github-flow')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="github-flow">
+                <h2>Fluxo de trabalho do GitHub</h2>
+                <p>O GitHub possui um fluxo de trabalho. Ele se baseia diretamente nas funcionalidades essenciais do
+                    Git.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h3>Estados de um arquivo</h3>
+                <p>Um arquivo pode ter diferentes estados:</p>
+                <ul>
+                    <li><i>Untracked</i> ou não rastreado: Estado inicial do arquivo quando ele ainda não foi preparado
+                        para nada. Basicamente o Git não vê ele e não sabe de sua existência.</li>
+                    <li><i>Tracked</i> ou rastreado: Um arquivo rastreado é quando o Git percebe ele e agora está
+                        monitorando/rastreando esse arquivo.</li>
+                    <li><i>Unmodified</i> ou não modificado: O arquivo está sendo rastreado mas desde o último commit
+                        não teve nenhuma alteração.</li>
+                    <li><i>Modified</i> ou modificado: Em relação ao último commit, esse arquivo foi modificado mas as
+                        suas alterações ainda não foram rastreadas.</li>
+                    <li><i>Staged</i> ou preparado: O arquivo foi modificado e as alterações foram adicionadas na área
+                        de preparação e essas alterações estão prontas para serem commitadas.</li>
+                    <li><i>Committed</i>: O arquivo está na database do repositório e representa a última versão
+                        commitada do arquivo no momento.</li>
+                </ul>
+                <h3>Fluxo de trabalho do Git</h3>
+                <p>É um modelo de fluxo de trabalho que é usado principalmente em projetos grandes, demorados e que
+                    envolve muitos desenvolvedores. O fluxo interno de desenvolvimento contém várias branches de
+                    desenvolvimento e uma principal (<code>main</code> ou <code>master</code>).</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <ul>
+                    <li><code>master</code> ou <code>main</code>: Sempre reflete na versão final/completa do projeto (v.
+                        1.0; v. 2.0; etc)</li>
+                    <li><code>develop</code>: Branch onde o desenvolvimento ativo acontece. A branch principal é
+                        atualizada a partir dessa branch.</li>
+                    <li><code>feature/"nome_feature"</code>: Usada para criar novas funcionalidades e é clonada/derivada
+                        da branch <code>develop</code> e é mesclada a ela quando é finalizada.</li>
+                    <li><code>release/"nome_versao"</code>: Usada para preparar uma nova versão de produção. É derivada
+                        da branch <code>develop</code> e, após os ajustes finais, é mesclada nas branches
+                        <code>main</code> e <code>develop</code>.
+                    </li>
+                    <li><code>hotfix/"nome_versao"</code>: Usada rapidamente para corrigir bugs críticos em produção. É
+                        derivada da branch <code>main</code> e, após a correção, é mesclada nas branches
+                        <code>main</code> e <code>develop</code>.
+                    </li>
+                </ul>
+                <nav class="buttons">
+                    <button class="back" onclick="back('github-flow','github')">Anterior</button>
+                        <button class="next" onclick="next('github-flow','github-pages')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="github-pages">
+                <h2>GitHub Pages</h2>
+                <p>É um serviço que é usado para publicar e hospedar seu reposiório e transformá-lo em um website
+                    estático usando HTML, CSS e JavaScript.</p>
+                <p>OBS: Só são suportados HTML, CSS e JavaScript. Qualquer outro front ou back end como Python, Django,
+                    SQL não vao ser hospedados no GitHub Pages.</p>
+
+                <h3>Como criar um site com o seu repositório e hospedar no GitHub Pages</h3>
+                <p>O Jekyll é um gerador de site estático que o GitHub usa para criar um site com base no conteúdo do
+                    seu repositório.</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <h4>Front matter YAML</h4>
+                <p>Esse termo se refere aos metadados YAML que precedem o conteúdo de um arquivo. Para o Jekyll, essas
+                    dados incluem instruções para indicar o estilo do layout de uma página markdown. Também pode incluir
+                    dados da página como o título, variáveis, etc.</p>
+                <p>Para personalizar o site, é preciso editar o arquivo <code>_config.yml</code>. <a
+                        href="https://jekyllrb.com/docs/configuration/">Saiba mais</a>.</p>
+
+                <h4>Editando</h4>
+                <p>O Jekyll dá suporte à linguagem do modelo Liquid, ou seja, é possível adicionar variáveis e fluxos de
+                    lógica (if, for, while) dentro do markdown/html:</p>
+                <p>Exemplo de um looping <code>for</code>:</p>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption>Exemplo de um looping for em Liquid</figcaption>
+                </figure>
+                <p>Nesse <a
+                        href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll">artigo</a>
+                    mostra mais infomações de como adicionar conteúdo ao seu site usando o Jekyll.</p>
+                    <nav class="buttons">
+                    <button class="back" onclick="back('github-pages','github-flow')">Anterior</button>
+                        <button class="next" onclick="next('github-pages','other-features-github')">Próximo</button>
+                    </nav>
+            </section>
+            <section id="other-features-github">
+                <h2>Pesquisa do GitHub</h2>
+                <p>A barra de pesquisa do GitHub possui diversos métodos para pesquisar sobre algo. Você pode pesquisar
+                    dentro de um repositório em especifico ou procurar em todo o GitHub. Os resultados abrangem tudo,
+                    incluindo código, issues, marketplace, usuários, etc.</p>
+                <p>É possível colocar alguns filtros na hora da pesquisa, como esses:</p>
+                <figure><img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Para mais ajuda de como pesquisar coisas específicas com filtros, este <a href="https://docs.github.com/pt/enterprise-cloud@latest/search-github/searching-on-github">artigo</a> fala mais sobre.</p>
+                <p>Caso você queira uma coisa mais específica e mais complexa, pode usar a <a href="https://github.com/search/advanced">pesquisa avançada do GitHub.</a></p>
+
+                <h3>Marcos/milestones e rótulos/labels</h3>
+                <p>Os marcos permitem agrupar issues e PRs em uma categoria.</p>
+                <ul>
+                    <li>Os marcos podem ser ordenados (assim como os projetos), facilitando as prioridades e a visualização de quais marcos são mais importantes.</li>
+                    <li>Acompanhamento automático do progresso de cada etapa, mostrando quantas questões ou pRs estão concluidas e etc.</li>
+                    <li>Acompanhar o trabalho que entra das versões ou fases do projeto</li>
+                </ul>
+                <p>Você pode atribuir um rótulo à uma Issue ou PR e é útil na hora da pesquisa:</p>
+                <section class="terminal">
+                    <p><code>is:open is:issue label:"bug"</code></p>
+                    <p><code>// mostra todas as issues abertas com o rótulo bug</code></p>
+                </section>
+                <nav class="buttons">
+                    <button class="back" onclick="back('other-features-github','github-pages')">Anterior</button>
+                    </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
