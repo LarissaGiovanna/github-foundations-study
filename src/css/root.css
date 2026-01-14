@@ -31,7 +31,7 @@ body {
     /* header */
     header {
         width: 100%;
-        height: 80px;
+        height: 20dvw;
         background-color: var(--background);
         display: flex;
         align-items: center;
@@ -69,6 +69,30 @@ body {
     .menu .fa {
         color: white;
         font-size: 5dvw;
+    }
+
+    #menu-nav {
+        display: none;
+        position: absolute;
+        top: 20dvw;
+        right: 0;
+        padding: 10dvw 5dvw;
+        background-color: var(--background);
+        box-shadow: -2dvw 2dvw 5dvw rgba(0, 0, 0, 0.5);
+    }
+    #menu-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3dvw;
+    }
+    #menu-nav ul li a {
+        color: var(--white);
+        text-decoration: none;
+        font-size: 4dvw;
+    }
+    #menu-nav ul li a:hover {
+        text-decoration: underline;
     }
 
     /* footer */

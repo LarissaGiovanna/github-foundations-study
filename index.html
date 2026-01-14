@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="title-container">
+        <nav class="title-container" onclick="window.location.href='index.html'">
             <img src="src/img/github-logo.png" alt="GitHub Logo" class="logo">
             <div class="title">
                 <img src="src/img/logo-certification.svg" alt="Logo GitHub Foundations" class="title-img">
@@ -20,8 +20,24 @@
             </div>
         </nav>
         <sec class="menu">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="openMenu()"></i>
         </sec>
+        <nav id="menu-nav">
+            <ul>
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="src/pages/exercises.html">Exercícios</a>
+                </li>
+                <li>
+                    <a href="https://github.com">Acessar o GitHub</a>
+                </li>
+                <li>
+                    <a href="src/pages/about.html">Sobre</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="presentation">
@@ -168,7 +184,8 @@
                     <p>O exame é pago, e o valor pode variar dependendo da sua localização. Porém, ao se inscrever no
                         programa do GitHub Education, o estudante ganha um voucher exclusivo para realizar a prova de
                         forma gratuita.</p>
-                    <a href="https://education.github.com/" target="_blank" class="education-link">Saiba mais sobre o GitHub Education</a>
+                    <a href="https://education.github.com/" target="_blank" class="education-link">Saiba mais sobre o
+                        GitHub Education</a>
                 </div>
                 <a href="modules/fazer-a-prova.html" class="start-link">Inscrever-se para a prova</a>
             </div>
@@ -198,5 +215,6 @@
         <p>Site feito para fins educacionais.</p>
     </footer>
 </body>
+<script src="src/js/script.js"></script>
 
 </html>
