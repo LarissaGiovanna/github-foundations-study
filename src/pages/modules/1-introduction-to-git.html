@@ -58,9 +58,10 @@
                     para ajudar no desenvolvimento do kernel do Linux. O Git permite que múltiplos desenvolvedores
                     trabalhem simultaneamente em um projeto, mantendo um histórico completo de todas as alterações
                     feitas.</p>
-                    <nav class="buttons">
-                        <button class="next" onclick="next('git','common-terms-git')">Próximo</button>
-                    </nav>
+                <p>A documentação oficial do Git pode ser encontrada <a href="https://git-scm.com/docs">aqui</a>.</p>
+                <nav class="buttons">
+                    <button class="next" onclick="next('git','common-terms-git')">Próximo</button>
+                </nav>
             </section>
             <section id="common-terms-git">
                 <h2>Termos comuns</h2>
@@ -86,8 +87,8 @@
                 </ul>
                 <nav class="buttons">
                     <button class="back" onclick="back('common-terms-git','git')">Anterior</button>
-                        <button class="next" onclick="next('common-terms-git','git-github')">Próximo</button>
-                    </nav>
+                    <button class="next" onclick="next('common-terms-git','git-github')">Próximo</button>
+                </nav>
             </section>
             <section id="git-github">
                 <h2>Git vs GitHub</h2>
@@ -163,14 +164,15 @@
                 </ul>
                 <nav class="buttons">
                     <button class="back" onclick="back('git-github','common-terms-git')">Anterior</button>
-                        <button class="next" onclick="next('git-github','github')">Próximo</button>
-                    </nav>
+                    <button class="next" onclick="next('git-github','github')">Próximo</button>
+                </nav>
             </section>
             <section id="github">
                 <h2>GitHub</h2>
                 <p>O GitHub é uma plataforma de hospedagem de código-fonte e controle de versão que utiliza o Git como
                     sistema de controle de versão. Ele permite que desenvolvedores colaborem em projetos, compartilhem
                     código e gerenciem versões de software de forma eficiente.</p>
+                <p>O site oficial do GitHub pode ser encontrado <a href="https://github.com">aqui</a>.</p>
                 <p>Veremos a partir de agora as funcionalidades principais do GitHub.</p>
 
                 <h3>Repositórios</h3>
@@ -183,8 +185,22 @@
                 </ul>
                 <h4>Como clonar um repositório</h4>
                 <ul>
-                    <ol>No seu repositório GitHub, tem um botão chamativo escrito <i>Code</i>. Ao apertar nele, irá ser
-                        mostrado um link que você precisa copiar.</ol>
+                    <ol>No seu repositório GitHub, tem um botão chamativo escrito <i>Code</i>.
+                        <figure>
+                            <img src="../../img/modules_imgs/repo.png"
+                                alt="Página inicial de um repositório no GitHub com o botão 'Code' destacado.">
+                            <figcaption>Página inicial de um repositório no GitHub com o botão "Code" destacado.
+                            </figcaption>
+                        </figure>
+                    </ol>
+                    <ol>Ao apertar nele, irá ser
+                        mostrado um link que você precisa copiar.
+                        <figure>
+                            <img src="../../img/modules_imgs/repo_code.png"
+                                alt="Link para clonar um repositório no GitHub destacado.">
+                            <figcaption>Link para clonar um repositório no GitHub destacado.</figcaption>
+                        </figure>
+                    </ol>
                     <ol>No seu terminal, na pasta onde você quer salvar o seu clone, digite assim:
                         <section class="terminal">
                             <p><code>git clone "url-copiada"</code></p>
@@ -203,14 +219,19 @@
                 <p><b>OBS.:</b> Os Gists não são totalmente privados, mesmo os secretos podem ser acessados por quem tem
                     o link.</p>
                 <p>Para clonar um Gist, é praticamente a mesma coisa de clonar um repositório comum.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/gists.png" alt="Página inicial do gists.github.com">
+                    <figcaption>Página inicial do gists.github.com</figcaption>
+                </figure>
 
                 <h3>Wiki</h3>
                 <p>Wiki são como se fosse uma documentação de algo. Geralmente uma wiki serve para documentar as
                     informações detalhadas do projeto, enquanto que um README seria uma leitura mais rápida e direta
                     sobre o projeto. É praticamente a Wikipédia daquele projeto.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/wiki.png"
+                        alt="Página inicial da Wiki do repositório do VsCode no GitHub">
+                    <figcaption>Página inicial da Wiki do repositório do VsCode no GitHub</figcaption>
                 </figure>
 
                 <h3>Preview de uma nova feature</h3>
@@ -225,8 +246,8 @@
                     ser adicionada. O administrador do repositório pode olhar isso e analisar se deve aceitar as
                     alterações que a pessoa fez ou não.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/pull_request.png" alt="Exemplo de uma pull request no GitHub">
+                    <figcaption>Exemplo de uma pull request no GitHub.</figcaption>
                 </figure>
                 <p>Uma solicitação de pull (PR) compara alterações entre dois branches:</p>
                 <ul>
@@ -248,8 +269,8 @@
                     no GitHub. Como se fosse um fórum onde você pode expor algo relacionado ao projeto. Diferente de uma
                     PR, uma issue apenas expoe e o erro, ou o feed back sem modificar diretamente o código.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/issue.png" alt="Exemplo de uma issue no GitHub">
+                    <figcaption>Exemplo de uma issue no GitHub.</figcaption>
                 </figure>
 
                 <h3>Discussões</h3>
@@ -257,8 +278,9 @@
                     discussões, onde você pode conversar com as pessoas sobre diversos assuntos como se fosse um Reddit.
                     No seu repositório, você pode habilitar as discussões ou não.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/discussions.png"
+                        alt="Exemplo de uma página inicial de discussão no GitHub (GitHub Community)">
+                    <figcaption>Exemplo de uma página inicial de discussão no GitHub (GitHub Community).</figcaption>
                 </figure>
                 <p>Cada discussão pode ser atribuída à uma categoria, entre elas:</p>
                 <ul>
@@ -275,16 +297,16 @@
                 <p>Uma discussão também pode ser convertida para uma issue.</p>
                 <nav class="buttons">
                     <button class="back" onclick="back('github', 'git-github')">Anterior</button>
-                        <button class="next" onclick="next('github','github-flow')">Próximo</button>
-                    </nav>
+                    <button class="next" onclick="next('github','github-flow')">Próximo</button>
+                </nav>
             </section>
             <section id="github-flow">
                 <h2>Fluxo de trabalho do GitHub</h2>
                 <p>O GitHub possui um fluxo de trabalho. Ele se baseia diretamente nas funcionalidades essenciais do
                     Git.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/github_flow.png" alt="Diagrama do fluxo de trabalho do GitHub">
+                    <figcaption>Diagrama do fluxo de trabalho do GitHub.</figcaption>
                 </figure>
                 <h3>Estados de um arquivo</h3>
                 <p>Um arquivo pode ter diferentes estados:</p>
@@ -307,8 +329,8 @@
                     envolve muitos desenvolvedores. O fluxo interno de desenvolvimento contém várias branches de
                     desenvolvimento e uma principal (<code>main</code> ou <code>master</code>).</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/git_flow.png" alt="Diagrama do fluxo de trabalho do Git">
+                    <figcaption>Diagrama do fluxo de trabalho do Git.</figcaption>
                 </figure>
                 <ul>
                     <li><code>master</code> ou <code>main</code>: Sempre reflete na versão final/completa do projeto (v.
@@ -328,8 +350,8 @@
                 </ul>
                 <nav class="buttons">
                     <button class="back" onclick="back('github-flow','github')">Anterior</button>
-                        <button class="next" onclick="next('github-flow','github-pages')">Próximo</button>
-                    </nav>
+                    <button class="next" onclick="next('github-flow','github-pages')">Próximo</button>
+                </nav>
             </section>
             <section id="github-pages">
                 <h2>GitHub Pages</h2>
@@ -337,13 +359,17 @@
                     estático usando HTML, CSS e JavaScript.</p>
                 <p>OBS: Só são suportados HTML, CSS e JavaScript. Qualquer outro front ou back end como Python, Django,
                     SQL não vao ser hospedados no GitHub Pages.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/pages.png" alt="Configurações do GitHub Pages">
+                    <figcaption>Configurações do GitHub Pages.</figcaption>
+                </figure>
 
                 <h3>Como criar um site com o seu repositório e hospedar no GitHub Pages</h3>
                 <p>O Jekyll é um gerador de site estático que o GitHub usa para criar um site com base no conteúdo do
                     seu repositório.</p>
                 <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                    <img src="../../img/modules_imgs/theme_pages.png" alt="Configurações do tema do GitHub Pages">
+                    <figcaption>Configurações do tema do GitHub Pages.</figcaption>
                 </figure>
                 <h4>Front matter YAML</h4>
                 <p>Esse termo se refere aos metadados YAML que precedem o conteúdo de um arquivo. Para o Jekyll, essas
@@ -357,16 +383,16 @@
                     lógica (if, for, while) dentro do markdown/html:</p>
                 <p>Exemplo de um looping <code>for</code>:</p>
                 <figure>
-                    <img src="" alt="">
+                    <img src="../../img/modules_imgs/liquid_code.png" alt="Exemplo de um looping for em Liquid">
                     <figcaption>Exemplo de um looping for em Liquid</figcaption>
                 </figure>
                 <p>Nesse <a
                         href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll">artigo</a>
                     mostra mais infomações de como adicionar conteúdo ao seu site usando o Jekyll.</p>
-                    <nav class="buttons">
+                <nav class="buttons">
                     <button class="back" onclick="back('github-pages','github-flow')">Anterior</button>
-                        <button class="next" onclick="next('github-pages','other-features-github')">Próximo</button>
-                    </nav>
+                    <button class="next" onclick="next('github-pages','other-features-github')">Próximo</button>
+                </nav>
             </section>
             <section id="other-features-github">
                 <h2>Pesquisa do GitHub</h2>
@@ -374,17 +400,24 @@
                     dentro de um repositório em especifico ou procurar em todo o GitHub. Os resultados abrangem tudo,
                     incluindo código, issues, marketplace, usuários, etc.</p>
                 <p>É possível colocar alguns filtros na hora da pesquisa, como esses:</p>
-                <figure><img src="" alt="">
-                    <figcaption></figcaption>
+                <figure>
+                    <img src="../../img/modules_imgs/search_github.png"
+                        alt="Exemplo de filtros de pesquisa no GitHub">
+                    <figcaption>Exemplo de filtros de pesquisa no GitHub.</figcaption>
                 </figure>
-                <p>Para mais ajuda de como pesquisar coisas específicas com filtros, este <a href="https://docs.github.com/pt/enterprise-cloud@latest/search-github/searching-on-github">artigo</a> fala mais sobre.</p>
-                <p>Caso você queira uma coisa mais específica e mais complexa, pode usar a <a href="https://github.com/search/advanced">pesquisa avançada do GitHub.</a></p>
+                <p>Para mais ajuda de como pesquisar coisas específicas com filtros, este <a
+                        href="https://docs.github.com/pt/enterprise-cloud@latest/search-github/searching-on-github">artigo</a>
+                    fala mais sobre.</p>
+                <p>Caso você queira uma coisa mais específica e mais complexa, pode usar a <a
+                        href="https://github.com/search/advanced">pesquisa avançada do GitHub.</a></p>
 
                 <h3>Marcos/milestones e rótulos/labels</h3>
                 <p>Os marcos permitem agrupar issues e PRs em uma categoria.</p>
                 <ul>
-                    <li>Os marcos podem ser ordenados (assim como os projetos), facilitando as prioridades e a visualização de quais marcos são mais importantes.</li>
-                    <li>Acompanhamento automático do progresso de cada etapa, mostrando quantas questões ou pRs estão concluidas e etc.</li>
+                    <li>Os marcos podem ser ordenados (assim como os projetos), facilitando as prioridades e a
+                        visualização de quais marcos são mais importantes.</li>
+                    <li>Acompanhamento automático do progresso de cada etapa, mostrando quantas questões ou pRs estão
+                        concluidas e etc.</li>
                     <li>Acompanhar o trabalho que entra das versões ou fases do projeto</li>
                 </ul>
                 <p>Você pode atribuir um rótulo à uma Issue ou PR e é útil na hora da pesquisa:</p>
@@ -394,7 +427,7 @@
                 </section>
                 <nav class="buttons">
                     <button class="back" onclick="back('other-features-github','github-pages')">Anterior</button>
-                    </nav>
+                </nav>
             </section>
         </article>
     </main>
