@@ -42,7 +42,7 @@
     <main>
         <article class="module-content">
             <h1>Introdução ao Git e GitHub</h1>
-            <section id="git">
+            <section id="git" class="hidden-section">
                 <h2>Git</h2>
                 <h3>Controle de versão</h3>
                 <h4>O que é?</h4>
@@ -59,11 +59,12 @@
                     trabalhem simultaneamente em um projeto, mantendo um histórico completo de todas as alterações
                     feitas.</p>
                 <p>A documentação oficial do Git pode ser encontrada <a href="https://git-scm.com/docs">aqui</a>.</p>
+
                 <nav class="buttons">
                     <button class="next" onclick="next('git','common-terms-git')">Próximo</button>
                 </nav>
             </section>
-            <section id="common-terms-git">
+            <section id="common-terms-git" class="hidden-section">
                 <h2>Termos comuns</h2>
                 <p>Alguns termos que são usados comumente no Git:</p>
                 <ul>
@@ -85,12 +86,13 @@
                     <li><b>Remoto</b>: Um remoto é uma referência a um repositório Git. É como se tivesse um repositório
                         remoto e outro local. O nome padrão é <code>origin</code>.</li>
                 </ul>
+
                 <nav class="buttons">
                     <button class="back" onclick="back('common-terms-git','git')">Anterior</button>
                     <button class="next" onclick="next('common-terms-git','git-github')">Próximo</button>
                 </nav>
             </section>
-            <section id="git-github">
+            <section id="git-github" class="hidden-section">
                 <h2>Git vs GitHub</h2>
                 <p><b>Git</b> é um sistema de controle de versão distribuído (Distributed Version Control System
                     (DVCS)).</p>
@@ -167,7 +169,7 @@
                     <button class="next" onclick="next('git-github','github')">Próximo</button>
                 </nav>
             </section>
-            <section id="github">
+            <section id="github" class="hidden-section">
                 <h2>GitHub</h2>
                 <p>O GitHub é uma plataforma de hospedagem de código-fonte e controle de versão que utiliza o Git como
                     sistema de controle de versão. Ele permite que desenvolvedores colaborem em projetos, compartilhem
@@ -300,7 +302,7 @@
                     <button class="next" onclick="next('github','github-flow')">Próximo</button>
                 </nav>
             </section>
-            <section id="github-flow">
+            <section id="github-flow" class="hidden-section">
                 <h2>Fluxo de trabalho do GitHub</h2>
                 <p>O GitHub possui um fluxo de trabalho. Ele se baseia diretamente nas funcionalidades essenciais do
                     Git.</p>
@@ -353,7 +355,7 @@
                     <button class="next" onclick="next('github-flow','github-pages')">Próximo</button>
                 </nav>
             </section>
-            <section id="github-pages">
+            <section id="github-pages" class="hidden-section">
                 <h2>GitHub Pages</h2>
                 <p>É um serviço que é usado para publicar e hospedar seu reposiório e transformá-lo em um website
                     estático usando HTML, CSS e JavaScript.</p>
@@ -394,15 +396,14 @@
                     <button class="next" onclick="next('github-pages','other-features-github')">Próximo</button>
                 </nav>
             </section>
-            <section id="other-features-github">
+            <section id="other-features-github" class="hidden-section">
                 <h2>Pesquisa do GitHub</h2>
                 <p>A barra de pesquisa do GitHub possui diversos métodos para pesquisar sobre algo. Você pode pesquisar
                     dentro de um repositório em especifico ou procurar em todo o GitHub. Os resultados abrangem tudo,
                     incluindo código, issues, marketplace, usuários, etc.</p>
                 <p>É possível colocar alguns filtros na hora da pesquisa, como esses:</p>
                 <figure>
-                    <img src="../../img/modules_imgs/search_github.png"
-                        alt="Exemplo de filtros de pesquisa no GitHub">
+                    <img src="../../img/modules_imgs/search_github.png" alt="Exemplo de filtros de pesquisa no GitHub">
                     <figcaption>Exemplo de filtros de pesquisa no GitHub.</figcaption>
                 </figure>
                 <p>Para mais ajuda de como pesquisar coisas específicas com filtros, este <a
@@ -425,6 +426,7 @@
                     <p><code>is:open is:issue label:"bug"</code></p>
                     <p><code>// mostra todas as issues abertas com o rótulo bug</code></p>
                 </section>
+                
                 <nav class="buttons">
                     <button class="back" onclick="back('other-features-github','github-pages')">Anterior</button>
                 </nav>

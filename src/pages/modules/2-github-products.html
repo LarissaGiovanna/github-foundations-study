@@ -39,6 +39,668 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Produtos do GitHub</h1>
+            <section id="accounts">
+                <p>Aqui estão descritos os produtos como contas, assinaturas e serviços do GitHub:</p>
+                <h2>Tipos de contas do GitHub:</h2>
+                <ul>
+                    <li>Pessoal</li>
+                    <li>Organização</li>
+                    <li>Enterprise/Corporativas</li>
+                </ul>
+                <h3>Contas Pessoais</h3>
+                <p>Todos os usuários do <i>github.com</i> se conectam através de uma conta pessoal. Cada pessoa tem um
+                    nome de usuário e um perfil.</p>
+                <p>Ações como criar um repositório, criar uma issue, criar um PR são associados à conta pessoal daquela
+                    pessoa.</p>
+                <p>Uma conta pode estar utilizando o
+                    <i>GitHub Free</i> ou o <i>GitHub Pro</i>, mas independente disso, todas as contas podem ter um
+                    número infinito de repositórios público e privados e de colaboradores neles, porém com o GitHub
+                    Free, os repositórios privados tem um conjunto limitado de recursos.
+                </p>
+                <h3>Contas Organizacionais</h3>
+                <p>São contas que são compartilhadas entre algumas pessoas que representa uma organização. As permissões
+                    com as contas da organização são feitas em uma abordagem em camadas.</p>
+                <p>Essas contas podem ter repositórios, projetos e etc, semelhante às contas pessoais.</p>
+                <p><b>Não </b>é possivel entrar em uma organização. Para fazer parte de uma organização, cada pessoa
+                    coloca em sua conta pesosoal que trabalha naquela organização e todas as açoes que a pessoa faz em
+                    um repositorio ou projeto são como se fosse uma prova de que a pessoa faz parte daquela organização.
+                    Uma pessoa pode ser membro de diversas organizações.</p>
+                <p>As contas pesosoais dentro de uma organização podem receber diferentes funções par adar diferentes
+                    niveis de acesso e permissões dentro da organização. Todo mundo pode colaborar entre si nos
+                    projetos, mas somente os proprietarios da organização e as pessoas atribuidas podem gerenciar as
+                    configurações da organização e controlar o acesso dos dados e das permissões.</p>
+                <h3>Contas Enterprise/Corporativas</h3>
+                <p>Essas contas permitem que os administradores gerenciem as politicas e a cobrança das suas
+                    organizações. Um conta corporativa deve ter algo para identificar ela, como uma organização
+                    atribuida a ela ou uma conta comum.</p>
+                <p>É como se fosse uma conta para a empresa, pois é uma conta compartilhada entre os membros. Geralmente
+                    é compartilhada para que os membros colocaborem em varios projetos de uma vez so.</p>
+                <p>A conta corporativa permite que a pessoa gerencie e aplique policas para todas as organizações
+                    pertencentes a empresa. É como se o <i>Google</i> fosse a conta corporativa e o <i>Youtube</i> fosse
+                    a conta da organização.</p>
+
+                <nav class="buttons">
+                    <button class="next" onclick="next('accounts','subscriptions')">Próximo</button>
+                </nav>
+            </section>
+            <section id="subscriptions" class="hidden-section">
+                <h2>Planos</h2>
+                <p>O GitHub possui os seguintes planos:</p>
+                <ul>
+                    <li>GitHub Free (pessoal e organização)</li>
+                    <li>GitHub Pro (pessoal)</li>
+                    <li>GitHub Teams</li>
+                    <li>GitHub Enterprise</li>
+                </ul>
+                <h3>Free</h3>
+                <p>O GitHub Free é o plano padrão para todos os que criam uma nova conta. Ele te da um nome de usuário e
+                    uma conta com email, senha e etc. Possui repositorios publico e privados ilimitados e colcaboradores
+                    ilimitados.</p>
+                <p>Está incluido:</p>
+                <ul>
+                    <li>Suporte da comunidade do GitHub (forums, discussões)</li>
+                    <li>Alertas do DependaBot (um bot que escaneia codigo e que serve para gerenciar e atualizar as
+                        dependências do projeto automaticamente)</li>
+                    <li>Autenticação de dois fatores</li>
+                    <li>500 MB de armazenamento do GitHub Packages</li>
+                    <li>120 horas para usar o GitHub Codespaces por mês (Codespaces é como se fosse o vscode na web
+                        integrado diretamente com sua conta GitHub)</li>
+                    <li>15 GB de armazenamento do Codespaces por mês</li>
+                    <li>GitHub Actions (bot de automação)
+                        <ul>
+                            <li>2 mil minutos por mês</li>
+                            <li>Regras de proteção contra cópia/implantação para repositórios públicos</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Free para Organizações</h4>
+                <p>O plano Free para organizações além de incluir os beneficios do plano pessoal, também inclui:</p>
+                <ul>
+                    <li>Controles de acesso da equipe para gerenciamento de grupos</li>
+                </ul>
+                <h3>Pro</h3>
+                <p>O Pro tem tudo o que tem no Free mas vem com mais recursos e aprimorações. A ideia dese plano é
+                    projetada para devs indivisuais que desejam ferramentas avançadas em seus repositorios mas que não
+                    pertencem a uma equipe ou organzação/empresa.
+                </p>
+                <p>O plano Pro inclui o Free e:</p>
+                <ul>
+                    <li>Suporte do GitHub por email</li>
+                    <li>3 mil minutos do GitHub Actions por mês</li>
+                    <li>2 GB de armazenamento do GitHub Packages</li>
+                    <li>180 horas para usar o GitHub Codespaces por mês</li>
+                    <li>20 GB de armazenamento do Codespaces por mês</li>
+                    <li>Mais ferramentas e recursos nos repositórios privados:
+                        <ul>
+                            <li>Revisores obrigatórios</li>
+                            <li>Proteção de branch avançada</li>
+                            <li>Mais opções no GitHub Pages e Wiki</li>
+                            <li>Gráficos e informações do repositório para análise</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Teams</h3>
+                <p>Esse plano foi feito para organizações que precisam de recursos a mais para colaboração, segurança e
+                    gerenciamento do fluxo de trabalho que está além do que é oferecido no plano Free para organizações.
+                    É bem parecido com o plano Pro mas com o foco em equipes e possui mais recursos de colaboração.</p>
+                <p>Inclui:</p>
+                <ul>
+                    <li>Suporte do GitHub por email</li>
+                    <li>3 mil minutos do GitHub Actions por mês</li>
+                    <li>2 GB de armazenamento do GitHub Packages</li>
+                    <li>Mais ferramentas em repositórios privados:</li>
+                    <ul>
+                        <li>Revisores de solicitações de PR obrigatórios</li>
+                        <li>PR rascunho (draft)</li>
+                        <li>Revisores de PR da equipe</li>
+                        <li>Proteção de branch avançada</li>
+                        <li>Agendamento de lembrete para a equipe</li>
+                        <li>Mais opções no GitHub Pages e Wiki</li>
+                    </ul>
+                    <li>Grafos sobre o repositório para análise</li>
+                    <li>Capacidade de habilitar ou desabilitar o Codespaces para desenvolvimento em nuvem.</li>
+                </ul>
+                <h3>Enterprise</h3>
+                <p>Ao se inscrever no Enterpise, você cria uma conta corporativa e agora você é o proprietário da
+                    empresa. Com isso, você pode gerenciar varias organizações que estão dentro da sua empresa.</p>
+                <p>Além de tudo que é incluido no plano Team, também é incluido:</p>
+                <ul>
+                    <li>Suporte corporativo 24h e 7 dias por semana dedicado do GitHub</li>
+                    <li>Logon único SAML (Security Assertion Markup Language)</li>
+                    <li>Recursos expandidos de segurança</li>
+                    <li>Autenticação e gerenciamento de usuario por meio de outros provedores externos.</li>
+                    <li>Regras de proteção de implantação para repositórios privados ou internos</li>
+                    <li>GitHub Conect, que permite o compartilhamento seguro de dados entre o <i>GitHub Enterprise
+                            Server</i> e o <i>GitHub Enterprise Cloud</i></li>
+                    <li>Opção para adiquirir o serviço da Segurança Avançada do GitHub (GitHub Advanced Security) para a
+                        proteção do codigo.</li>
+                </ul>
+                <h4>Versões</h4>
+                <p>O plano Enterpise possui duas opções:</p>
+                <ul>
+                    <li>GitHub Enterprise Server (GHES)</li>
+                    <li>GitHub Enterprise Cloud (GHEC)</li>
+                </ul>
+                <p>O <b>GitHub Enterprise Server</b> (GHES) é uma solução auto-hospedada que permite que as organizações
+                    tenham o controle total sobre a sua infraestrutura.</p>
+                <p>Já o plano <b>Cloud</b> possui um aumento na queantidade de minutos do GitHub Actions e no
+                    armazenamento de pacotes do GitHub.</p>
+                <p>Recursos adicionais do plano Cloud:</p>
+                <ul>
+                    <li>50 mil minutos do GitHub Actions por mês</li>
+                    <li>50 GB de armazenamento do GitHub Packages</li>
+                    <li>Um contrato de nível de serviço de atividade mensal de 99,9%</li>
+                    <li>Opção para gerenciar de forma centralizada a política e a cobrança para várias organizações da
+                        sua empresa</li>
+                    <li>Opção para gerenciar e monitorar as contas dos desenvolvedores da empresa
+                        <ul>
+                            <li>O EMU (Usuários Gerenciados da Empresa) permite que as organizações controlem
+                                identeidades e gerenciem o acesso e a segurança daquele usuarios e da empresa</li>
+                        </ul>
+                    </li>
+                    <p><b>OBS.:</b>O Copilot não está incuido em nenhum plano por padrão e é necessário adicionar por
+                        fora.</p>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('subscriptions','accounts')">Anterior</button>
+                    <button class="next" onclick="next('subscriptions','access-github')">Próximo</button>
+                </nav>
+            </section>
+            <section class="hidden-section" id="access-github">
+                <h2>Formas de Acessar o GitHub</h2>
+                <p>Além de acessar pelo site, também existem outras formas de acessar o GitHub, que são pelo celular e
+                    pelo desktop.</p>
+                <h3>GitHub Mobile</h3>
+                <p>É o app que está disponível tanto para IOS quanto para Android.</p>
+                <p>Nele você pode:</p>
+                <ul>
+                    <li>Gerenciar as notificações</li>
+                    <li>Ler, analisar e colaborar nos pull requests</li>
+                    <li>Editar arquivos nas solicitações de pull</li>
+                    <li>Pesquisar, navegar e interagir com usuários, repositórios, etc</li>
+                    <li>Receber notificações</li>
+                    <li>Agendar notificações</li>
+                    <li>Proteger sua conta com a autenticação de dois fatores</li>
+                    <li>Tarefas rápidas e lever quando estiver sem computador</li>
+                </ul>
+                <h3>GitHub Desktop</h3>
+                <p>É um aplicativo que ajuda a simplificar o fluxo de trabalho do Git e está disponível para Windows e
+                    macOS.</p>
+                <p>Você pode:</p>
+                <ul>
+                    <li>Adicionar repositórios para gerenciar projetos localmente para melhor organização</li>
+                    <li>Clonar repositórios do GitHub rapidamente</li>
+                    <li>Adicionar alterações no seu commit</li>
+                    <li>Examinar pull requests</li>
+                    <li>Comparar os commits de forma visual</li>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('access-github','subscriptions')">Anterior</button>
+                    <button class="next" onclick="next('access-github','payments')">Próximo</button>
+                </nav>
+            </section>
+            <section id="payments" class="hidden-section">
+                <h2>Cobranças e pagamentos</h2>
+                <p>A cobrança de baseia no tipo da conta (pessoal, organização, etc). Contas pessoas e a maiorias das
+                    organizações rebem cobranças separadas, enquanto que contas enterprise recebem a combrança em várias
+                    organizações (não centralizado).</p>
+                <p>As cobranças podem ser:</p>
+                <ul>
+                    <li>Assinaturas: Plano na sua conta e custos mensais fixos de outros serviços do GitHub, como o
+                        Copitlot e apps do Marketplace.</li>
+                    <li>Cobranças baseadas em uso: Custo quando aumenta o uso de algum produto. Ex: quando passa do
+                        limite do GitHub Actions ou do GitHub Packages (Pacotes)</li>
+                </ul>
+                <p><b>OBS.:</b>Nas configurações, podem ser colocados limites de usos, para não ser cobrado depois.</p>
+                <h3>Preços do GitHub Actions</h3>
+                <p>Os preços são definidos com base na visibilidade do repositório e no tipo de conta.</p>
+                <p>Para repositorios publicos, o uso é ilimitado.</p>
+                <p>Para repo privados, caso a pesosa atinja o limite permitido pelo plano atual, será calculador um
+                    valor para ser pago. Por isso é importante monitoriar o uso para não passar do limite.</p>
+                <p><b>OBS.:</b>CI/CD significa Continuous Integration and Continuous Deployment ou Integração Contínua e
+                    Implantação/entrega contínua e é um conjunto de práticas projetadas para melhorar o processo de
+                    desenvolvimento por meio e automatização de processos. O GitHub Actions faz justamente isso.
+                    <br>Mais informações: <a href="https://github.com/resources/articles/ci-cd?locale=pt-BR">O que é
+                        CI/CD?</a>
+                </p>
+                <h3>Tipos de cobranças</h3>
+                <p>Existem três tipos de cobrança:</p>
+                <ul>
+                    <li>Cobrança mensal: Cobranças que são feitas a cada mês.</li>
+                    <li>Cobranças proporcionais: Se um usuário de uma organização consumir uma licença durante o mês, a
+                        organização será cobrada proporcionalmente pelo uso daquele usuário. O valor se reajusta com
+                        base no uso daquele usuário. Ex: plano do GitHub Teams + GitHub Copilot do dev Fulano.</li>
+                    <li>Ajustes dinâmicos: Se um usuário parar de consimir uma licença durante o mês, a cobrança do mês
+                        seguinte refletirá essa alteração, fazendo com que a organização apenas pague pelos usuários
+                        ativos.</li>
+                </ul>
+                <h4>Ferramentas para auxiliar nas finanças</h4>
+                <p>O GitHub também oferece ferramentas para gerenciar os seus pagamentos:</p>
+                <ul>
+                    <li>Controle de gastos: Os admins podem definir limites de gastos para os serviços, como o Actions e
+                        o Packages.</li>
+                    <li>Informações detalhas sobre o uso: Visibilidade detalhada sobre o uso do produto usado no momento
+                    </li>
+                    <li>Relatórios automatizados: Recursos para a automação de relatórios financeiros</li>
+                </ul>
+                <p><b>OBS.:</b> O uso do GitHub Codespaces gera cobranças extras com base no tempo de armazenamento e
+                    computação</p>
+                <p><b>OBS2.:</b> Os admins podem receber alertas ao se aproximarem dos limtes dos serviços através do
+                    próprio site e por email.</p>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('payments','access-github')">Anterior</button>
+                    <button class="next" onclick="next('payments','license')">Próximo</button>
+                </nav>
+            </section>
+            <section id="license" class="hidden-section">
+                <h2>Uso de licença</h2>
+                <p>Como um administrador do GitHub Enterprise, é muito importante acomanhar o uso da licença para poder
+                    gerenciar custos e otimizar recursos.</p>
+                <p>Essa parte mostra como acompanhar e gerenciar o uso de licenças do GitHub Enterprise entre
+                    orgaizações, contas corporativas e servidores.</p>
+                <p><b>OBS.:</b> Nos planos pré-pagos (baseados em assinatura) tem um número definido de licenças
+                    disponíveis, porém, por padrão, os novos clientes do Enterprise usam o plano pay-as-you-go (PAYG)
+                    que não mostra essa parte de licenças disponíveis e você é cobrado a cada mês de acordo com os
+                    serviços que você está usando.</p>
+                <h3>Passo a passo para localizar e gerenciar as licenças:</h3>
+                <h4>Método 1: localizar o uso de licença para uma organização específica</h4>
+                <p>Usando o Console de Administração do GitHub Enterprise Cloud:</p>
+                <ul>
+                    <ol>Navegue até o Painel de Administração de Nuvem do GitHub Enterprise Cloud.</ol>
+                    <ol>Vá para Configurações > Cobrança e Planos.</ol>
+                    <ol>Localize a seção de uso de licença para ver os detalhes.</ol>
+                    <ol>Veja detalhes como:
+                        <ul>
+                            <li>Total de assentos distribuídos</li>
+                            <li>Assentos ativos em uso</li>
+                            <li>Convites pendentes</li>
+                            <li>Licenças disponíveis (mostradas apenas para contas pré-pagas)</li>
+                        </ul>
+                    </ol>
+                </ul>
+                <p>Alternativa de linha de comando (API do GraphQL):</p>
+                <div class="terminal">
+                    <p><code>{</code></p>
+                    <p><code class="one_tab">organization(login: "ORG_NAME") {</code></p>
+                    <p><code class="two_tabs">billingInfo {</code></p>
+                    <p><code class="three_tabs">totalSeats</code></p>
+                    <p><code class="three_tabs">seatsUsed</code></p>
+                    <p><code class="three_tabs">seatsPending</code></p>
+                    <p><code class="three_tabs">seatsAvailable</code></p>
+                    <p><code class="two_tabs">       }</code></p>
+                    <p><code class="one_tab">   }</code></p>
+                    <p><code>}</code></p>
+                </div>
+                <h4>Método 2: localizar o uso de licença em várias organizações</h4>
+                <p>Usando a página de cobrança da conta corporativa</p>
+                <ul>
+                    <ol>Navegue até as configurações do GitHub Enterprise Cloud > Enterprise</ol>
+                    <ol>Acesse o uso da licença de cobrança</ol>
+                    <ol>Examine o uso de lença para cada organização na conta corporativa</ol>
+                </ul>
+                <p>Consulta da API do GraphQL para todas as organizações</p>
+                <div class="terminal">
+                    <p><code>{</code></p>
+                    <p><code class="one_tab">enterprise(slug: "enterprise_name") {</code></p>
+                    <p><code class="two_tabs">organizations(first: 50){</code></p>
+                    <p><code class="three_tabs">nodes{</code></p>
+                    <p><code class="four_tabs">name</code></p>
+                    <p><code class="four_tabs">billingInfo{</code></p>
+                    <p><code class="five_tabs">totalSeats</code></p>
+                    <p><code class="five_tabs">seatsUsed</code></p>
+                    <p><code class="five_tabs">seatsPending</code></p>
+                    <p><code class="five_tabs">seatsAvailable</code></p>
+                    <p><code class="four_tabs">}</code></p>
+                    <p><code class="three_tabs">}</code></p>
+                    <p><code class="two_tabs">}</code></p>
+                    <p><code class="one_tab">}</code></p>
+                    <p><code>}</code></p>
+                </div>
+                <h4>Método 3: localizar o uso de licenças para contas corporativas</h4>
+                <p>Usando o painel do GitHub Enterprise Server</p>
+                <ul>
+                    <ol>Faça logon no console de Administração do GitHub Enterprise Server.</ol>
+                    <ol>Vá para configurações > Uso da licença</ol>
+                    <ol>Analise:
+                        <ul>
+                            <ol>Total de licenças alocadas</ol>
+                            <ol>Usuários ativos</ol>
+                            <ol>estações disponíveis</ol>
+                            <ol>Tendências de uso para licenças históricas</ol>
+                        </ul>
+                    </ol>
+                </ul>
+                <p>Alternativa à API REST</p>
+                <div class="terminal">
+                    <p><code>curl -H "Authorization: token YOUR-TOKEN" \</code></p>
+                    <p><code>"https://api.github.com /enterprises/YOUR-ENTERPRISE/license"</code></p>
+                </div>
+                <h4>Método 4: localizar o uso da licença em várias instâncias do GitHub</h4>
+                <p>Usando a API de Métricas do GitHub Enterprise Server</p>
+                <ul>
+                    <ol>Acesse as configurações de administrador do GitHub Enterprise Server</ol>
+                    <ol>Use a API de Métricas:</ol>
+                    <div class="terminal">
+                        <p><code>curl -H "Authorization: token YOUR-TOKEN" \</code></p>
+                        <p><code>"https://api.github.com /enterprise/settings/licenses"</code></p>
+                    </div>
+                    <ol>Analise:
+                        <ul>
+                            <li>Total de licenças em toda a empresa</li>
+                            <li>Uso por instância do GitHub</li>
+                            <li>Capacidade disponível por região</li>
+                        </ul>
+                    </ol>
+                </ul>
+                <h5>Boas práticas de gerenciamento</h5>
+                <ul>
+                    <li>Automatizar o processo (usar consulta de API REST ou GraphQL)</li>
+                    <li>Verificar usuários inativos e libar as licenças não utilizadas</li>
+                    <li>Habilitar cobrança baseada em uso, para cobrar pelo que realmente você está usando, evitando
+                        gastos a mais</li>
+                    <li>Realizar revisões com frequencia para controlar os custos</li>
+                </ul>
+                <h3>Uso de licença em dispositivos e periféricos</h3>
+                <p>Contas de computador são contas do GitHub que servem para automação, execução de scripts ou
+                    integração com outras máquinas de terceiros. Eles autam independentemente dos usuários humanos,
+                    porém, <b>cada conta de computador consome uma licença do GitHub</b>, como se fosse uma pessoa.</p>
+                <p>Exemplos de serviços que usam: GitHub Actions, Jenkins, ferramnetas de CI/CD, etc.</p>
+                <p>Serviços periféricos são integrações externas que interagem com o GitHub por meio de solitações de
+                    API.</p>
+                <p>Exemplos: Pipelines de CI/CD (Github Actions, etc), ferramentas de verificação de segurança,
+                    integraçõs de terceiros, etc.</p>
+                <p>É importante acompanhar tudo isso para:</p>
+                <ul>
+                    <li>Identificar licenças não utilizadas ou que estão sendo usadas de mais</li>
+                    <li>Otimizar custos</li>
+                    <li>Monitorar riscos de segurança de contas de automação inativas ou que foram configuradas de forma
+                        incorreta</li>
+                </ul>
+                <h4>Como localizar as estatísticas para o uso de licença para contas do computador:</h4>
+                <h5>Método 1: Console de administrador do GitHub Enterprise</h5>
+                <ul>
+                    <ol>Navegue até as configurações da empresa</ol>
+                    <ol>Selecione Cobrança e Gerenciamento de Licenças</ol>
+                    <ol>Procure uma seção Contas do Computador (se disponível)</ol>
+                    <ol>Identifique:
+                        <ul>
+                            <li>Número de contas de computador ativas</li>
+                            <li>Consumo de licença por conta de computador</li>
+                            <li>Última data ativa</li>
+                        </ul>
+                    </ol>
+                </ul>
+                <h5>Método 2: Consulta da API do GraphQL para contas do computador</h5>
+                <p>Para recuperar as estatísticas de uso da conta de computador, use a API do GraphQL:</p>
+                <div class="terminal">
+                    <p><code>{</code></p>
+                    <p><code class="one_tab">enterprise(slug: "enterprise_name") {</code></p>
+                    <p><code class="two_tabs">organizations(first: 50){</code></p>
+                    <p><code class="three_tabs">nodes {</code></p>
+                    <p><code class="four_tabs">name</code></p>
+                    <p><code class="four_tabs">machineAccounts{</code></p>
+                    <p><code class="five_tabs">totalCount</code></p>
+                    <p><code class="five_tabs">nodes{</code></p>
+                    <p><code class="six_tabs">login</code></p>
+                    <p><code class="six_tabs">createdAt</code></p>
+                    <p><code class="six_tabs">lastActiveAt</code></p>
+                    <p><code class="five_tabs">}</code></p>
+                    <p><code class="four_tabs">}</code></p>
+                    <p><code class="three_tabs">}</code></p>
+                    <p><code class="two_tabs">}</code></p>
+                    <p><code class="one_tab">}</code></p>
+                    <p><code>}</code></p>
+                </div>
+                <p>Por que acompanhar isso?</p>
+                <ul>
+                    <li>Para identificar contas inativas</li>
+                    <li>Para acompanhar quando cada conta do computador estava ativa pela última vez</li>
+                    <li>Para ajudar a evitar a alocação desnecessária de licenças</li>
+                </ul>
+                <h4>Como localizar o uso de licença para os serviços periféricos:</h4>
+                <h5>Método 1: Métricas de Uso do GitHub Actions e Runners</h5>
+                <ul>
+                    <ol>Vá para as configurações da empresa > ações</ol>
+                    <ol>Veja:
+                        <ul>
+                            <li>Total de minutos de executos hospedados no GitHub usados</li>
+                            <li>Uso de runner auto-hospedado</li>
+                            <li>Cobrança por minutos de runner adicionais</li>
+                        </ul>
+                    </ol>
+                </ul>
+                <h4>Método 2: API REST para Self Hosted Runners</h4>
+                <p>Para rastrear o uso de runners auto-hospedados e seu uso de licença, utilize a API REST do GitHub:
+                </p>
+                <div class="terminal">
+                    <p><code>curl -H "Authorization: token YOUR-TOKEN" \</code></p>
+                    <p><code>"https://api.github.com /enterprise/YOUR-ENTERPRISE/actions/runners"</code></p>
+                </div>
+                <p>Isso mostra:</p>
+                <ul>
+                    <li>Identifica quantos runners estão consumindo licenças</li>
+                    <li>Acompanha runners ociosos que podem estar desperdiçando recursos</li>
+                    <li>Ajuda a otimizar a cobrança por minutos de runner hospedados no GitHub</li>
+                </ul>
+                <h5>Método 3: Acompanhamento de uso da API de Serviços periféricos</h5>
+                <p>Monitorar integrações baseadas em API usando:</p>
+                <div class="terminal">
+                    <p><code>curl -H "Authorization: token YOUR-TOKEN" \</code></p>
+                    <p><code>"https://api.github.com /enterprise/YOUR-ENTERPRISE/audit-log"</code></p>
+                </div>
+                <p>Isso ajuda a:</p>
+                <ul>
+                    <li>Detectar Serviços inativos: localize os serviços que não estão mais em uso</li>
+                    <li>Auditar ferramentas de terceiros: verifique se as ferramentas externas são necessárias e
+                        configuradas corretamente</li>
+                    <li>Reduzir custos: desabilitar serviços que não estão fornecendo valor</li>
+                </ul>
+                <h4>Boas práticas para gerenciamento:</h4>
+                <ul>
+                    <li>Identificar e desativar contas que não estão sendo mais utilizadas
+                        <ul>
+                            <li>É importante apgar pois podem exister contas que ainda podem ter acesso a repositórios e
+                                sistemas e comm isso, essas contas podem ser exploradas e comprometidas, correndo um
+                                risco de segurança</li>
+                        </ul>
+                    </li>
+                    <li>Monitorar o uso da API
+                        <ul>
+                            <li>Muitos apps de terceiros consomem recursos de API do GitHUb e consequentemente as
+                                licenças</li>
+                            <li>Muitas chamadas de API podem levar a cobrança</li>
+                            <li>O uso não autorizado ou desconhecido pode correr riscos de segurança</li>
+                        </ul>
+                    </li>
+                    <li>Identificar executores ociosos e reduzir os custos do executor hospedado no GitHub
+                        <ul>
+                            <li>Os executores hospedados no GitHub operam de forma paga conforme o uso e é importante
+                                monitorar para evitar gastos desnecessários.</li>
+                        </ul>
+                    </li>
+                    <li>Restringir contas de computador e impor politicas de segurança
+                        <ul>
+                            <li>Essas contas possuem acesso ao codigo fonte, por isso, é importante rever as contas não
+                                utilizadas e gerenciar o acesso.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('license','payments')">Anterior</button>
+                    <button class="next" onclick="next('license','uses')">Próximo</button>
+                </nav>
+            </section>
+            <section id="uses" class="hidden-section">
+                <h2>Relatórios de Uso</h2>
+                <h3>Como gerenciar os minutos utilizados do GitHub Actions</h3>
+                <p>O Actions é uma ferramenta de automação de CI/CD que são executados em máquinas virtuais. Os minutos
+                    consumidos são medidos com base no tipo de repositorio, tipo de executor (maquina) e no uso.</p>
+                <h4>Acompanhamento do consumo</h4>
+                <ul>
+                    <ol>Navegue até Configurações > Cobrança em sua organização ou conta pessoal no GitHub.</ol>
+                    <ol>Na seção GitHub Actions, visualize o uso dos minutos.</ol>
+                    <ol>O uso é divido por repositório, tipo de executor (Linux, Windows, macOS) e por cota restante.
+                    </ol>
+                    <figure>
+                        <img src="../../img/modules_imgs/price_actions.png" alt="preços do github actions">
+                        <figcaption>Preços do GitHub Actions</figcaption>
+                    </figure>
+                </ul>
+                <h4>Boas práticas de otimização:</h4>
+                <ul>
+                    <li>Usar automações/corretores auto-hospedaodos para fluxos de trabalho com grande volume (faça seu
+                        proprio)</li>
+                    <li>Otimizar scripts armazenando em cache sempre que possivel</li>
+                    <li>Limitar os fluxos para acionar somente quando for necessário. Ex: Verificar somente quando foi
+                        enviada alguma alteração para a branch <code>main</code>.</li>
+                </ul>
+                <h3>Como gerenciar o armazenamento do GitHub Packages</h3>
+                <p>O GitHub Packages permite armazenar contêiners e dependencias. O armazenamento é medido com base no
+                    volume de dados armazenados e no uso de transferência de dados.</p>
+                <h3>Acompanhamento do consumo</h3>
+                <ul>
+                    <li>Navegue até Configurações > Cobrança > GitHub Packages para exibir o uso do armazenamento.</li>
+                    <li>A divisão inclui armazenamento (GB) e transferência de dados (gb) usados por repositório.</li>
+                    <figure>
+                        <img src="../../img/modules_imgs/price_packages.png"
+                            alt="dados de transferência do github packages">
+                        <figcaption>Dados de transferência do GitHub Packages</figcaption>
+                    </figure>
+                    <p>Sobre preços do GitHub Packages, consulte a <a href="https://github.com/pricing">página oficial
+                            de preços do GitHub</a>.</p>
+                </ul>
+                <h4>Boas práticas de otimização:</h4>
+                <ul>
+                    <li>Excluir pacotes não utilizados para liberar espaço de armazenamento.</li>
+                    <li>Monitorar regularmente o uso para evitar custos inesperados.</li>
+                    <li>Armazenar arquivos/screenshots acessados com frequência em um registro centralizado para evitar
+                        a duplicação</li>
+                    <li>Utilizar formatos compactados para reduzir o espaço de armazenamento necessário.</li>
+                </ul>
+                <h3>Como acompanhar o consumo das licenças do GitHub Enterprise</h3>
+                <h4>Acompanhamento do consumo</h4>
+                <ul>
+                    <ol>Vá em Configurações corporativas > Cobrança para exibir relatórios de uso de licenças do GitHub
+                        Enterprise.</ol>
+                    <ol>Monitore usuários ativos vs licenças alocadas</ol>
+                </ul>
+                <h4>Detalhes de cobrança:</h4>
+                <ul>
+                    <li>Modelo de preços:
+                        <ul>
+                            <li>Cada usuário com acesso a repositórios privados consome uma licença</li>
+                            <li>As organizações pagam por usuário anualmente ou mensalmente</li>
+                        </ul>
+                    </li>
+                    <li>Usuários inativos:
+                        <ul>
+                            <li>Se um administrador remover um usuário, a licença permanecerá atribuída para o período
+                                de cobrança, mas poderá ser realocada.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Boas práticas de otimização:</h4>
+                <ul>
+                    <li>Revisar periodicamente o uso de licenças para garantir que apenas usuários ativos estejam
+                        alocados.</li>
+                    <li>Usar o provedor SSO e SCIM para automatizar o gerenciamento de usuários e licenças.</li>
+                </ul>
+                <h3>Como acompanhar as licenças de GHAS (GitHub Advanced Security):</h3>
+                <p>O GHAS oferece verificação de código e funções semelhantes para garantir a segurança.</p>
+                <h4>Acompanhamento do consumo</h4>
+                <ul>
+                    <ol>Para exibir o uso do GHAS no <i>github.com</i>, selecione Empresas na navegação lateral,
+                        selecione sua empresa na lista e navegue até Cobrança > Segurança Avançada.</ol>
+                    <li>Um commiter ativo é qualquer pessoa que tenha enviado por push pelo menos uma confirmação para
+                        um repositório com o GHAS habilitado nos últimos 90 dias, independentemente de quando a
+                        confirmação foi originalmente criada.</li>
+                    <li>A cobrança do GHAS baseia-se no número de confirmadores ativos exclusivos por período de
+                        cobrança</li>
+                </ul>
+                <h5>Detalhes de cobrança:</h5>
+                <ul>
+                    <li>Modelo de preço:
+                        <ul>
+                            <li>Cobrado por Confirmador exclusivo por mês</li>
+                            <li>Se um confirmador contribuir para vários repositórios, eles só contarão apenas uma vez
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Plano gratuito: Não disponível (disponível somente para repositórios públicos)</li>
+                </ul>
+                <h5>Boas práticas de otimização:</h5>
+                <ul>
+                    <li>Restringir o GHAS para repositórios que realmente precisam de segurança avançada</li>
+                    <li>Proteger branches para limitar verificações desnecessárias</li>
+                </ul>
+                <h3>Como acompanhar o consumo do GitHub Copilot</h3>
+                <p>O Copilot é uma IA que sugere código e é cobrada por usuário.</p>
+                <h4>Acompanhamento do consumo</h4>
+                <ul>
+                    <li>Os administradores podem visualizar o uso do Copilot na seção de cobrança da organização.</li>
+                    <li>O relatório mostra usuários ativos e estimativas mensais de cobrança.</li>
+                </ul>
+                <h4>Detalhes de cobrança:</h4>
+                <ul>
+                    <li>Modelo de acesso:
+                        <ul>
+                            <li>Disponível para indivíduos e empresas com diferentes opções de assinatura</li>
+                        </ul>
+                    </li>
+                    <li>Acesso gratuito:
+                        <ul>
+                            <li>Gratuito para alunos e mantenedores de open source verificados</li>
+                            <li>Gratuito para clientes empresariais selecionados (baseado em avaliação)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Para conferir os preços do GitHub Copilot, visite a <a
+                        href="https://github.com/features/copilot?locale=pt-BR#pricing">página oficial de preços do
+                        GitHub</a>.</p>
+                <h4>Boas práticas:</h4>
+                <ul>
+                    <li>Examinar e desativar o Copilot para os usuários que não precisam dele</li>
+                    <li>Incentivar os devs a desabilitar em projetos em que o código gerado por IA é desnecessário</li>
+                </ul>
+                <h3>Como conferir o armazenamento do GitHub LFS (Large File Storage)</h3>
+                <p>O LFS é usado para armazenar arquivos binários grandes separadamente dos repositórios Git.</p>
+                <h4>Acompanhamento do consumo</h4>
+                <ul>
+                    <li>O uso do LFS é exibido na seção de cobrança.</li>
+                    <li>O relatório inclui o armazenamento (GB) e o uso de largura de banda (gb).
+                    </li>
+                </ul>
+                <h4>Detalhes da cobrança:</h4>
+                <ul>
+                    <li>Camada gratuita
+                        <ul>
+                            <li>1 GB de armazenamento e 1 GB de largura de banda por mês</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Veja a <a
+                        href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage#about-storage-and-bandwidth-usage">documentação
+                        do LFS</a> para mais informações.</p>
+                <h4>Boas práticas:</h4>
+                <ul>
+                    <li>Usar serviços de armazenamento externo para arquivos grandes (AWS, Azure, etc)</li>
+                    <li>Excluir arquivos grandes não utilizados</li>
+                    <li>Limpar / fazer um poda de arquivos antigos ou não referenciados do cache local</li>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('uses','license')">Anterior</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
