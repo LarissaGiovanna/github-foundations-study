@@ -22,7 +22,7 @@
         <sec class="menu">
             <i class="fa fa-bars" onclick="openMenu()"></i>
         </sec>
-        <nav id="menu-nav">
+        <nav id="menu-nav" class="nav-mobile">
             <ul>
                 <li>
                     <a href="../../../index.html">Início</a>
@@ -38,19 +38,30 @@
                 </li>
             </ul>
         </nav>
+        <nav class="desktop-nav">
+            <a href="../../../index.html">Início</a>
+            <a href="../exercises.html">Exercícios</a>
+            <a href="https://github.com">Acessar o GitHub</a>
+            <a href="../about.html">Sobre</a>
+        </nav>
     </header>
     <main>
         <article class="module-content">
             <h1>Introdução ao Copilot</h1>
             <section id="about">
                 <h2>Sobre o Copilot</h2>
-                <p>O Copilot é uma IA que ajuda a escrever código mais rápido. Ele supõe o contexto a partir de comentários nas linhas do código. O modelo de linguagem foi treinado pela OpenAI e pertence à plataforma OpenAI Codex.</p>
+                <p>O Copilot é uma IA que ajuda a escrever código mais rápido. Ele supõe o contexto a partir de
+                    comentários nas linhas do código. O modelo de linguagem foi treinado pela OpenAI e pertence à
+                    plataforma OpenAI Codex.</p>
                 <p>A ideia é que a IA seja um "par" com o desenvolvedor e ajude-o a escrever o código.</p>
                 <h3>Recursos</h3>
                 <h4>Chat</h4>
-                <p>Uma interface para trocar ideias com um chat, semelhante ao ChatGPT. A interface se integra de forma nativa no VS Code e no Visual Studio, por isso, é capaz de visualizar os arqquivos, as mensagens de erro, a árvore de trabalho, etc.</p>
+                <p>Uma interface para trocar ideias com um chat, semelhante ao ChatGPT. A interface se integra de forma
+                    nativa no VS Code e no Visual Studio, por isso, é capaz de visualizar os arqquivos, as mensagens de
+                    erro, a árvore de trabalho, etc.</p>
                 <h4>Pull requests</h4>
-                <p>Sugestão de texto nas descrições dos PRs. Os administradores das organizações e os proprietários podem instalar esse aplicativo ou não.</p>
+                <p>Sugestão de texto nas descrições dos PRs. Os administradores das organizações e os proprietários
+                    podem instalar esse aplicativo ou não.</p>
                 <h4>CLI</h4>
                 <p>Ajuda para compor comandos e loops no terminal da sua máquina.</p>
 
@@ -87,7 +98,8 @@
                 </ul>
 
                 <h3>Pro +</h3>
-                <p>Esse tipo inclui todos os recursos do Pro, mas possui como extra o uso de alguns modelos premiums. Ele é focado para pessoas com necessidades de uso mais altas que o comum.</p>
+                <p>Esse tipo inclui todos os recursos do Pro, mas possui como extra o uso de alguns modelos premiums.
+                    Ele é focado para pessoas com necessidades de uso mais altas que o comum.</p>
                 <p>Inclui:</p>
                 <ul>
                     <li>Tudo do Pro</li>
@@ -106,7 +118,8 @@
                 </ul>
 
                 <h3>Enterprise</h3>
-                <p>Esse plano é focado para grandes organizações e empresas que exigem funcionalidades mais avançadas, integração mais profunda e mais personalização, e inclui:</p>
+                <p>Esse plano é focado para grandes organizações e empresas que exigem funcionalidades mais avançadas,
+                    integração mais profunda e mais personalização, e inclui:</p>
                 <ul>
                     <li>Tudo do Business</li>
                     <li>Sugestões de código personalizadas com base no código interno/privado</li>
@@ -124,7 +137,8 @@
             <section id="how-to-use" class="hidden-section">
                 <h2>Interação</h2>
                 <h3>Como instalar</h3>
-                <p>Para usar o Copilot, você precisa instalar a extensão do GitHub Copilot na sua IDE (ambiente de desenvolvimento integrado).</p>
+                <p>Para usar o Copilot, você precisa instalar a extensão do GitHub Copilot na sua IDE (ambiente de
+                    desenvolvimento integrado).</p>
                 <p>Exemplos de IDEs suportadas:</p>
                 <ul>
                     <li>Visual Studio Code</li>
@@ -134,13 +148,16 @@
                     <li>VS Code for the Web</li>
                 </ul>
                 <p>Após instalar a extensão, você precisa fazer login com sua conta do GitHub para ativar o Copilot.</p>
-                <p><a href="https://learn.microsoft.com/pt-br/training/modules/introduction-to-github-copilot/4-setup-configure-troubleshoot">Veja mais sobre como instalar aqui.</a></p>
+                <p><a
+                        href="https://learn.microsoft.com/pt-br/training/modules/introduction-to-github-copilot/4-setup-configure-troubleshoot">Veja
+                        mais sobre como instalar aqui.</a></p>
                 <h3>Sugestões embutidas</h3>
                 <p>O Copilot prevê o que você quer escrever e te mostra uma sugestão.</p>
                 <p>Para aceitar uma susgestão, aperte <code>Tab</code> ou <code>→</code>; (seta para a direita)</p>
                 <p>Para rejeitar uma sugestão, continue digitando ou aperte <code>Esc</code>.</p>
                 <figure>
-                    <img src="../../img/modules_imgs/example_code_copilot.png" alt="Exemplo de sugestão do Copilot no VS Code">
+                    <img src="../../img/modules_imgs/example_code_copilot.png"
+                        alt="Exemplo de sugestão do Copilot no VS Code">
                     <figcaption>Exemplo de sugestão do Copilot no VS Code</figcaption>
                 </figure>
 
@@ -158,7 +175,8 @@
                 <h3>Chat</h3>
                 <p>É um chat onde você pode conversar com o Copilot.</p>
                 <p>Para abrir o chat, aperte <code>Ctrl + Shift + I</code> no VS Code.</p>
-                <p>Ou aperte no painel do Copilot na sua IDE. Geralmente é um botão com o simbolo do Copilot ou um simbolo de chat.</p>
+                <p>Ou aperte no painel do Copilot na sua IDE. Geralmente é um botão com o simbolo do Copilot ou um
+                    simbolo de chat.</p>
                 <figure>
                     <img src="../../img/modules_imgs/chat_copilot.png" alt="Chat do Copilot no VS Code">
                     <figcaption>Chat do Copilot no VS Code</figcaption>
@@ -168,7 +186,8 @@
                 <p>É um chat mas que é no meio do código.</p>
                 <ul>
                     <ol>Coloque o cursor na linha onde você deseja consultar</ol>
-                    <ol>Aperte <code>Ctrl + I</code> para abrir o chat e conversar com ele sobre aquela linha/trecho do código.</ol>
+                    <ol>Aperte <code>Ctrl + I</code> para abrir o chat e conversar com ele sobre aquela linha/trecho do
+                        código.</ol>
                 </ul>
                 <figure>
                     <img src="../../img/modules_imgs/inline_chat_copilot.png" alt="Chat embutido do Copilot no VS Code">
@@ -183,16 +202,19 @@
                 </ul>
 
                 <h3>Comentários no código</h3>
-                <p>Você pode escrever um comentário no código e o Copilot vai te sugerir um código com base no que você escreveu.</p>
+                <p>Você pode escrever um comentário no código e o Copilot vai te sugerir um código com base no que você
+                    escreveu.</p>
                 <figure>
-                    <img src="../../img/modules_imgs/comment_copilot.png" alt="Comentário no código sugerindo código pelo Copilot">
+                    <img src="../../img/modules_imgs/comment_copilot.png"
+                        alt="Comentário no código sugerindo código pelo Copilot">
                     <figcaption>Comentário no código sugerindo código pelo Copilot</figcaption>
                 </figure>
 
                 <h3>Outras sugestões</h3>
                 <p>Procure o ícone da lâmpada e lá estará uma sugestão do Copilot.</p>
                 <figure>
-                    <img src="../../img/modules_imgs/other_suggestions_copilot.png" alt="Outras sugestões do Copilot no VS Code">
+                    <img src="../../img/modules_imgs/other_suggestions_copilot.png"
+                        alt="Outras sugestões do Copilot no VS Code">
                     <figcaption>Outras sugestões do Copilot no VS Code</figcaption>
                 </figure>
 
