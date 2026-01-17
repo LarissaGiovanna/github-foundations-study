@@ -45,6 +45,7 @@ header{
     display: flex;
     align-items: center;
     gap: 3dvw;
+    cursor: pointer;
 }
 
 .logo {
@@ -87,6 +88,55 @@ header{
     color: var(--white);
     text-decoration: none;
     font-size: 1.5dvw;
+}
+
+.desktop-nav a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 100%;
+    height: fit-content;
+    padding: 2dvh 5dvw;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 1.2dvw;
+    margin-top: 3dvh;
+}
+
+footer .links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 5dvw;
+    margin-bottom: 0.5dvw;
+}
+
+.links section{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5dvw;
+}
+
+.links a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+footer p{
+    font-size: 1dvw;
+    color: var(--light-gray);
+    text-align: start;
+    font-style: italic;
+    width: 70%;
+    margin-top: 1dvw;
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
@@ -170,6 +220,7 @@ header{
     footer{
         width: 100%;
         height: 12dvh;
+        padding: 0;
         background-color: var(--background);
         display: flex;
         align-items: center;
@@ -181,6 +232,7 @@ header{
 
     footer .links{
         display: flex;
+        width: auto;
         gap: 10dvw;
         margin-bottom: 1dvw;
     }
