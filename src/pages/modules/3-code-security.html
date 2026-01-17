@@ -39,6 +39,41 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Varredura e Segurança de código</h1>
+            <section>
+                <h2>Visão Geral</h2>
+                <p>A varredura consiste numa análise do código em um repositório e serve para encontrar vulnerabilidades de segurança e erros de codificação. Essa função está disponível para todos os repositórios públicos e privados que são pertencente a organizações em que o GitHub Advanced Security está habilitado. Se a varredura encontrar algum erro/vulnerabilidade, o GitHub mostrará um alerta na aba Segurança.</p>
+                <p>É possível automatizar esse processo para fazer numa determinada hora, quando ocorre algum evento específico e etc.</p>
+                <h3>CodeQL</h3>
+                <p>O GitHub usa um mecanismo chamado CodeQL.</p>
+                <p>CodeQL é uma ferramenta de análise de código que permite identificar vulnerabilidades e erros de segurança em seu código-fonte. Ele funciona criando consultas personalizadas para detectar padrões específicos que podem indicar problemas de segurança.</p>
+                <p>Existem três maneiras de confugurá-lo:</p>
+                <ul>
+                    <li>
+                        Configuração padrão: Essa é uma configuração rápida. Essa configuração pede a escolha das linguagens para serem analisadas, o pacote de consultas e os eventos que disparam essa verificação. Ao colocar desse modo, ele faz uma verificação como uma <b>ação do GitHub Actions</b>.
+                    </li>
+                    <li>Configuração avançada: Com essa configuração, você adiciona o fluxo de trabalho do CodeQL diretamente do seu repositório (personalizável), usando os recursos desse <a href="https://github.com/github/codeql-action/">repositório</a> para executar como uma ação do GitHub Actions.</li>
+                    <li>CLI: Desse modo é possível executar essa varredura diretamente em um sistema de integração contínua (CI) externo e carregar os resultados no GitHub. OBS.: esse modo é necessário buscar a <a href="https://learn.microsoft.com/pt-br/training/modules/configure-code-scanning/3-enable-code-scanning-with-third-party-tools">API do GitHub.</a></li>
+                </ul>
+                <h3>Suporte</h3>
+                <p>O Code QL possui o suporte para as seguintes linguagens:</p>
+                <ul>
+                    <li>C/C++</li>
+                    <li>C#</li>
+                    <li>GO</li>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                    <li>JavaScript/TypeScript</li>
+                    <li>Python</li>
+                    <li>Ruby</li>
+                    <li>Swift</li>
+                </ul>
+                <p><b>OBS.:</b> Cada verificação consome minutos do GitHub Actions.</p>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
