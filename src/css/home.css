@@ -209,7 +209,6 @@ h3 {
 }
 
 @media (min-width: 400px) and (max-width: 800px) {
-
     /* main */
     main {
         width: 100%;
@@ -254,7 +253,7 @@ h3 {
     }
 
     .text-container p{
-        font-size: 3dvw;
+        font-size: 4dvw;
     }
 
     /* modules */
@@ -358,7 +357,7 @@ h3 {
         text-decoration: none;
         cursor: pointer;
         width: fit-content;
-        font-size: 3dvw;
+        font-size: 3.5dvw;
     }
 
     .explanation-container {
