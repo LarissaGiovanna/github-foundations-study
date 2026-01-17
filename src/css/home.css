@@ -1,14 +1,224 @@
 @import url('root.css');
 
-@media (min-width: 400px) {
+/* configs for screens larger than 400px */
+main {
+    width: 100%;
+    min-height: calc(100vh - 15dvh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5dvw 10dvw;
+}
+
+.presentation {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3dvw;
+    margin: 0.5dvw 0;
+}
+
+.img-container {
+    width: 100%;
+    background-color: sandybrown;
+    display: flex;
+    justify-content: center;
+    padding: 2dvw;
+}
+
+.img-container img {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-container {
+    width: 100%;
+    color: var(--white);
+    font-size: 2dvw;
+    text-align: center;
+}
+
+.text-container h2 {
+    margin-bottom: 1dvw;
+}
+
+.text-container p{
+    font-size: 1.7dvw;
+}
+
+/* modules */
+.start_here-container,
+.exercice-container,
+.exam-container,
+.why-container {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3dvw;
+    margin-top: 5dvw;
+}
+
+.start_here-container,
+.exercice-container,
+.exam-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2dvw;
+}
+
+
+.text-start-here,
+.exercice-container h2,
+.exam-container h2,
+.why-container h2 {
+    width: 100%;
+    font-size: 2dvw;
+    text-align: left;
+    margin: 1dvw 0;
+}
+
+.module,
+.exercice-module,
+.test-module,
+.exam-info,
+.explanation-container {
+    width: 100%;
+    background-color: var(--background);
+    padding: 2dvw;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 2dvw;
+}
+
+.exam-info,
+.explanation-container {
+    background-color: var(--gray);
+}
+
+.module img,
+.exercice-module img,
+.test-module img,
+.exam-info img,
+.explanation-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1dvh;
+}
+
+.module .module-text,
+.exercice-text,
+.test-text,
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+    gap: 2dvw;
+}
+
+h3 {
+    margin-bottom: 0.5dvw;
+}
+
+.exercice-module p,
+.test-module p {
+    margin-top: 1dvw;
+    line-height: 1.5;
+}
+
+.module h3,
+.exercice-module h3,
+.test-module h3 {
+    font-size: 2dvw;
+}
+
+.module p,
+.exercice-module p,
+.test-module p, .exam-info p, .explanation-container p {
+    font-size: 1.5dvw;
+    line-height: 1.5;
+}
+
+.module a,
+.exercice-module a,
+.test-module a,
+.exam-info a {
+    background-color: var(--white);
+    padding: 0.5dvw 2dvw;
+    font-size: 1.5dvw;
+    border-radius: 5px;
+    color: var(--black);
+    text-decoration: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.explanation-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.explanation-container img {
+    width: 70%;
+}
+
+.exam-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.exam-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2dvw;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvw;
+    align-items: center;
+    background-color: var(--background);
+    padding: 2dvw;
+    border-radius: 10px;
+}
+
+.pricing i {
+    font-size: 5dvw;
+    color: var(--yellow);
+    padding: 4px 6px;
+}
+
+.exam-info .start-link {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 2dvw 4dvw;
+    font-size: 2dvw;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+
     /* main */
-    main{
+    main {
         width: 100%;
         min-height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     /* presentation */
     .presentation {
         width: 100%;
@@ -24,7 +234,8 @@
         width: 90%;
         max-width: 90%;
         background-color: sandybrown;
-        display: flex;        justify-content: center;
+        display: flex;
+        justify-content: center;
         padding: 3dvw;
     }
 
@@ -41,8 +252,16 @@
         font-size: 4dvw;
         text-align: center;
     }
+
+    .text-container p{
+        font-size: 3dvw;
+    }
+
     /* modules */
-    .start_here-container, .exercice-container, .exam-container, .why-container {
+    .start_here-container,
+    .exercice-container,
+    .exam-container,
+    .why-container {
         width: 100%;
         height: auto;
         display: flex;
@@ -52,14 +271,29 @@
         margin-top: 20dvw;
     }
 
-    .start_here-container h2, .exercice-container h2, .exam-container h2, .why-container h2{
+    .text-start-here{
+        margin-top: 20dvw;
+    }
+
+    .start_here-container{
+        margin-top: 0;
+    }
+
+    .text-start-here,
+    .exercice-container h2,
+    .exam-container h2,
+    .why-container h2 {
         width: 90%;
         font-size: 5dvw;
         text-align: left;
         margin-bottom: 2dvw;
     }
 
-    .module, .exercice-module, .test-module, .exam-info, .explanation-container{
+    .module,
+    .exercice-module,
+    .test-module,
+    .exam-info,
+    .explanation-container {
         width: 90%;
         max-width: 90%;
         background-color: var(--background);
@@ -69,33 +303,54 @@
         font-size: 4dvw;
     }
 
-    .exam-info, .explanation-container{
+    .exam-info,
+    .explanation-container {
         background-color: var(--gray);
     }
 
-    .module img, .exercice-module img, .test-module img, .exam-info img, .explanation-container img{
+    .module img,
+    .exercice-module img,
+    .test-module img,
+    .exam-info img,
+    .explanation-container img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         margin-bottom: 2dvh;
     }
 
-    .module .module-text, .exercice-text, .test-text, .exam-info, .pricing, .explanation-container{
+    .module .module-text,
+    .exercice-text,
+    .test-text,
+    .exam-info,
+    .pricing,
+    .explanation-container {
+        height: fit-content;
         display: flex;
         flex-direction: column;
         gap: 3dvw;
     }
 
-    h3{
+    h3 {
         margin-bottom: 1dvw;
     }
 
-    .module p, .exercice-module p, .test-module p{
+    .start_here-container h3, .exercice-container h3, .exam-container h3 {
+        font-size: 5dvw;
+    }
+
+    .module p,
+    .exercice-module p,
+    .test-module p, .exam-info p, .explanation-container p {
+        font-size: 4dvw;
         margin-top: 2dvw;
         line-height: 1.5;
     }
 
-    .module a, .exercice-module a, .test-module a, .exam-info a{
+    .module a,
+    .exercice-module a,
+    .test-module a,
+    .exam-info a {
         background-color: var(--white);
         padding: 1dvw 3dvw;
         border-radius: 5px;
@@ -103,14 +358,15 @@
         text-decoration: none;
         cursor: pointer;
         width: fit-content;
+        font-size: 3dvw;
     }
 
-    .explanation-container{
+    .explanation-container {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .pricing{
+    .pricing {
         display: flex;
         flex-direction: column;
         gap: 3dvw;
@@ -120,13 +376,13 @@
         border-radius: 10px;
     }
 
-    .pricing i{
+    .pricing i {
         font-size: 8dvw;
         color: var(--yellow);
         padding: 4px 6px;
     }
 
-    .exam-info .start-link{
+    .exam-info .start-link {
         background-color: var(--blue);
         color: var(--white);
         padding: 3dvw 6dvw;
