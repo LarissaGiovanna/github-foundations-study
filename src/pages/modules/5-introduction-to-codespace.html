@@ -45,6 +45,53 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Introdução ao Codespaces</h1>
+            <section>
+                <h2>O que é o Codespaces?</h2>
+                <p>O GitHub Codespaces é um serviço que permite criar um ambiente de código dentro do navegador ou de alguma IDE para poder desenvolver seu projeto de forma remota.</p>
+
+                <h3>Ciclo de vida de um codespace</h3>
+                <p>O ciclo de vida de um codespace envolve as seguintes etapas:</p>
+                <figure>
+                    <img src="../../img/modules_imgs/codespace_life.png" alt="Diagrama do ciclo de vida de um codespace">
+                    <figcaption>Diagrama do ciclo de vida de um codespace</figcaption>
+                </figure>
+
+                <h3>Executar um codespace</h3>
+                <p>Um codespace pode ser criado a partir de um repositório, uma branch, um commit ou uma pull request.</p>
+                <p>No seu repositório na web, aperte <code>.</code> e um novo Codespace será aberto.</p>
+                <p>Para abrir um Codespace já existente, aperte <code>,</code> no seu repositório na web.</p>
+                <p>Um codespace pode ser criado temporariamente ou prolongado para o desenvolvimento de algum projeto.</p>
+                <h4>O que acontece por trás:</h4>
+                <ul>
+                    <ol>Uma VM (máquina virtual) e um armazenamento são atribuidos ao seu Codespace</ol>
+                    <ol>Um contêiner é criado</ol>
+                    <ol>É feita uma conexão com o Codespace</ol>
+                    <ol>É feita uma configuração de pós criação</ol>
+                </ul>
+                <figure>
+                    <img src="../../img/modules_imgs/codespace_behind.png" alt="Diagrama do que acontece por trás de um codespace">
+                    <figcaption>Diagrama do que acontece por trás de um codespace</figcaption>
+                </figure>
+
+                <h4>Personalização</h4>
+                <p>Como um Codespace é um ambiente de uma IDE (geralmente a do VS Code), pode-se personalizar do jeito de uma IDE comum, com extensões, atahos, temas, etc.</p>
+                <p><b>OBS.:</b> Nem todas as extensões funcionam com o Codespaces.</p>
+
+                <h3>Codespaces vs <i>github.dev</i></h3>
+                <p>O <i>github.dev</i> é um ambiente de código online e praticamente faz a mesma coisa do Codespaces, porém existem algumas diferenças.</p>
+                <p>O <i>github.dev</i> é recomendado para tarefas rápidas e mais leves. Já se quiser fazer um trabalho mais pesado, é recomendado usar o Codespaces, já que o Codespaces é hospedado em uma máquina virtual e possui acesso ao terminal, por exemplo, enquanto que o <i>github.dev</i> não é.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/comparative.png" alt="Diferenças entre Codespaces e github.dev">
+                    <figcaption>Diferenças entre Codespaces e github.dev</figcaption>
+                </figure>
+                <p>É possivel começar um trabalho no github.dev e continuar em um Codespace ao tentar executar uma função que não está disponível para a versão web, então o editor irá sugerir trocar para o Codespace.</p>
+            </section>
+
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
