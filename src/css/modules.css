@@ -142,4 +142,9 @@
         background-color: var(--green);
         color: var(--white);
     }
+
+    .buttons .next-module {
+        background-color: var(--blue);
+        color: var(--white);
+    }
 }
