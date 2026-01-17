@@ -39,6 +39,168 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Introdução ao Copilot</h1>
+            <section id="about">
+                <h2>Sobre o Copilot</h2>
+                <p>O Copilot é uma IA que ajuda a escrever código mais rápido. Ele supõe o contexto a partir de comentários nas linhas do código. O modelo de linguagem foi treinado pela OpenAI e pertence à plataforma OpenAI Codex.</p>
+                <p>A ideia é que a IA seja um "par" com o desenvolvedor e ajude-o a escrever o código.</p>
+                <h3>Recursos</h3>
+                <h4>Chat</h4>
+                <p>Uma interface para trocar ideias com um chat, semelhante ao ChatGPT. A interface se integra de forma nativa no VS Code e no Visual Studio, por isso, é capaz de visualizar os arqquivos, as mensagens de erro, a árvore de trabalho, etc.</p>
+                <h4>Pull requests</h4>
+                <p>Sugestão de texto nas descrições dos PRs. Os administradores das organizações e os proprietários podem instalar esse aplicativo ou não.</p>
+                <h4>CLI</h4>
+                <p>Ajuda para compor comandos e loops no terminal da sua máquina.</p>
+
+                <nav class="buttons">
+                    <button class="next" onclick="next('about','subscriptions')">Próximo</button>
+                </nav>
+            </section>
+            <section id="subscriptions" class="hidden-section">
+                <h2>Assinaturas</h2>
+                <p>Atualmente, o Copilot possui os seguintes tipos de planos:</p>
+                <ul>
+                    <li>Free</li>
+                    <li>Pro</li>
+                    <li>Pro +</li>
+                    <li>Business</li>
+                    <li>Enterprise</li>
+                </ul>
+
+                <h3>Free</h3>
+                <p>Plano gratuito para qualquer usuário, e está incluido:</p>
+                <ul>
+                    <li>2 mil susgestões/conclusões de código por mês</li>
+                    <li>50 solicitações de chat (novos chats) por mês</li>
+                    <li>Acesso aos modelos GPT-4o e Claude 3.5</li>
+                </ul>
+
+                <h3>Pro</h3>
+                <p>Recursos:</p>
+                <ul>
+                    <li>Sugestões/conclusões de código e solicitações de chat ilimitadas</li>
+                    <li>Acesso prioritário aos modelos de IA mais recentes</li>
+                    <li>Integração com outras IDEs (JetBrains, NeoVim, etc)</li>
+                    <li>Recursos automatizados de criação de testes e explicações de códigos</li>
+                </ul>
+
+                <h3>Pro +</h3>
+                <p>Esse tipo inclui todos os recursos do Pro, mas possui como extra o uso de alguns modelos premiums. Ele é focado para pessoas com necessidades de uso mais altas que o comum.</p>
+                <p>Inclui:</p>
+                <ul>
+                    <li>Tudo do Pro</li>
+                    <li>Acesso prioritário à infraestrutura (lugar da frente da fila de espera)</li>
+                </ul>
+
+                <h3>Business</h3>
+                <p>Plano focado para equipes, com recursos de administração e segurança e inclui:</p>
+                <ul>
+                    <li>Todos os recursos do Pro e do Pro + para os membros da organização</li>
+                    <li>Controles de política e gerenciamento centralizados</li>
+                    <li>Filtragem de vulnerabilidade de segurança</li>
+                    <li>Referências de código e filtragem de código público</li>
+                    <li>Segurança de IP e privacidade de nível empresarial</li>
+                    <li>Chat na IDE e nos dispositivos móveis</li>
+                </ul>
+
+                <h3>Enterprise</h3>
+                <p>Esse plano é focado para grandes organizações e empresas que exigem funcionalidades mais avançadas, integração mais profunda e mais personalização, e inclui:</p>
+                <ul>
+                    <li>Tudo do Business</li>
+                    <li>Sugestões de código personalizadas com base no código interno/privado</li>
+                    <li>Integração com o GitHub Enterprise Cloud</li>
+                    <li>Geração de pesquisa e documentação alimentada por IA em sua base de código</li>
+                    <li>Suporte avançado às solicitações de pull com resumos</li>
+                    <li>Personalização de modelos de IA privados</li>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('subscriptions','about')">Anterior</button>
+                    <button class="next" onclick="next('subscriptions','how-to-use')">Próximo</button>
+                </nav>
+            </section>
+            <section id="how-to-use" class="hidden-section">
+                <h2>Interação</h2>
+                <h3>Como instalar</h3>
+                <p>Para usar o Copilot, você precisa instalar a extensão do GitHub Copilot na sua IDE (ambiente de desenvolvimento integrado).</p>
+                <p>Exemplos de IDEs suportadas:</p>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Visual Studio</li>
+                    <li>JetBrains (IntelliJ, PyCharm, etc)</li>
+                    <li>Neovim</li>
+                    <li>VS Code for the Web</li>
+                </ul>
+                <p>Após instalar a extensão, você precisa fazer login com sua conta do GitHub para ativar o Copilot.</p>
+                <p><a href="https://learn.microsoft.com/pt-br/training/modules/introduction-to-github-copilot/4-setup-configure-troubleshoot">Veja mais sobre como instalar aqui.</a></p>
+                <h3>Sugestões embutidas</h3>
+                <p>O Copilot prevê o que você quer escrever e te mostra uma sugestão.</p>
+                <p>Para aceitar uma susgestão, aperte <code>Tab</code> ou <code>→</code>; (seta para a direita)</p>
+                <p>Para rejeitar uma sugestão, continue digitando ou aperte <code>Esc</code>.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/example_code_copilot.png" alt="Exemplo de sugestão do Copilot no VS Code">
+                    <figcaption>Exemplo de sugestão do Copilot no VS Code</figcaption>
+                </figure>
+
+                <h3>Paleta de comandos</h3>
+                <p>Acesso rápido à várias funções:</p>
+                <ul>
+                    <ol>Aperte <code>Ctrl + Shift + P</code> no VS Code</ol>
+                    <ol>Insira e selecione Copilot e veja as opções disponíveis.</ol>
+                </ul>
+                <figure>
+                    <img src="../../img/modules_imgs/search_copilot.png" alt="Paleta de comandos do Copilot no VS Code">
+                    <figcaption>Paleta de comandos do Copilot no VS Code</figcaption>
+                </figure>
+
+                <h3>Chat</h3>
+                <p>É um chat onde você pode conversar com o Copilot.</p>
+                <p>Para abrir o chat, aperte <code>Ctrl + Shift + I</code> no VS Code.</p>
+                <p>Ou aperte no painel do Copilot na sua IDE. Geralmente é um botão com o simbolo do Copilot ou um simbolo de chat.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/chat_copilot.png" alt="Chat do Copilot no VS Code">
+                    <figcaption>Chat do Copilot no VS Code</figcaption>
+                </figure>
+
+                <h3>Chat embutido</h3>
+                <p>É um chat mas que é no meio do código.</p>
+                <ul>
+                    <ol>Coloque o cursor na linha onde você deseja consultar</ol>
+                    <ol>Aperte <code>Ctrl + I</code> para abrir o chat e conversar com ele sobre aquela linha/trecho do código.</ol>
+                </ul>
+                <figure>
+                    <img src="../../img/modules_imgs/inline_chat_copilot.png" alt="Chat embutido do Copilot no VS Code">
+                    <figcaption>Chat embutido do Copilot no VS Code</figcaption>
+                </figure>
+                <p>Existem alguns comandos para executar ações mais rapidamente:</p>
+                <ul>
+                    <li><code>/explain</code>: explica o código selecionado</li>
+                    <li><code>/test</code>: cria testes para o código selecionado</li>
+                    <li><code>/refactor</code>: refatora o código selecionado</li>
+                    <li><code>/optimize</code>: otimiza o código selecionado</li>
+                </ul>
+
+                <h3>Comentários no código</h3>
+                <p>Você pode escrever um comentário no código e o Copilot vai te sugerir um código com base no que você escreveu.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/comment_copilot.png" alt="Comentário no código sugerindo código pelo Copilot">
+                    <figcaption>Comentário no código sugerindo código pelo Copilot</figcaption>
+                </figure>
+
+                <h3>Outras sugestões</h3>
+                <p>Procure o ícone da lâmpada e lá estará uma sugestão do Copilot.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/other_suggestions_copilot.png" alt="Outras sugestões do Copilot no VS Code">
+                    <figcaption>Outras sugestões do Copilot no VS Code</figcaption>
+                </figure>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('how-to-use','subscriptions')">Anterior</button>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
