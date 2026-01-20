@@ -45,6 +45,112 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Introdução ao Markdown</h1>
+            <section id="initial-sintax">
+                <h2>O que é Markdown?</h2>
+                <p>Markdown é uma linguagem de marcação leve que você pode usar para adicionar formatação a documentos
+                    de texto simples. No GitHub, o Markdown é amplamente utilizado para criar arquivos README, issues,
+                    pull requests e comentários.</p>
+
+                <h3>Sintaxe básica do Markdown</h3>
+                <p>A seguir estão alguns exemplos básicos de sintaxe Markdown:</p>
+                <ul>
+                    <li><b>Cabeçalhos:</b> Use o símbolo # para criar cabeçalhos. Quanto mais #, menor o nível
+                        do cabeçalho.
+                        <div class="terminal">
+                            <p><code># Cabeçalho 1</code></p>
+                            <p><code>## Cabeçalho 2</code></p>
+                        </div>
+                    </li>
+                    <li><b>Ênfase:</b> Use asteriscos ou underscores para adicionar ênfase ao texto.
+                        <div class="terminal">
+                            <p><code>*itálico*</code> ou <code>_itálico_</code></p>
+                            <p><code>**negrito**</code> ou <code>__negrito__</code></p>
+                        </div>
+                        <p>Para mostrar o asterisco ou underscore como texto, use a barra invertida antes do caractere, por exemplo, \* ou \_  :</p>
+                        <div class="terminal">
+                            <p><code>\*isso não é itálico\*</code></p>
+                        </div>
+                    </li>
+                    <li><b>Listas:</b> Use hífens, asteriscos ou números para criar listas.
+                        <div class="terminal">
+                            <p><code>- Item de lista não ordenada</code></p>
+                            <p><code>1. Item de lista ordenada</code></p>
+                        </div>
+                    </li>
+                    <li><b>Links:</b> Use colchetes e parênteses para criar links.
+                        <div class="terminal">
+                            <p><code>[Texto do link](URL)</code></p>
+                        </div>
+                    </li>
+                    <li><b>Imagens:</b> Use um ponto de exclamação seguido de colchetes e parênteses para
+                        adicionar imagens.
+                        <div class="terminal">
+                            <p><code>![Texto alternativo](URL da imagem)</code></p>
+                        </div>
+                    </li>
+                    <li><b>Citações em bloco:</b> Use o símbolo > para criar citações em bloco.
+                        <div class="terminal">
+                            <p><code>> Esta é uma citação em bloco.</code></p>
+                        </div>
+                    </li>
+                    <li><b>Código:</b> Use crases simples para código em linha e crases triplas para blocos
+                        de código.
+                        <div class="terminal">
+                            <p><code>`código em linha`</code></p>
+                            <p><code>```</code></p>
+                            <p><code>bloco de código</code></p>
+                            <p><code>```</code></p>
+                        </div>
+                    </li>
+                    <li><b>Tabelas:</b> Use hífens e pipes para criar tabelas.
+                        <div class="terminal">
+                            <p><code>| Cabeçalho 1 | Cabeçalho 2 |</code></p>
+                            <p><code>|-------------|-------------|</code></p>
+                            <p><code>| Célula 1    | Célula 2    |</code></p>
+                        </div>
+                    </li>
+                    <li><b>Outras formatações:</b> Para casos mais complexos, pode-se usar o HTML.</li>
+                </ul>
+
+                <nav class="buttons">
+                    <button class="back" onclick="window.location.href='../modules/6-6-project-management.html'">Módulo anterior</button>
+                    <button class="next" onclick="next('initial-sintax','sintax-on-github')">Próximo</button>
+                </nav>
+            </section>
+            <section id="sintax-on-github" class="hidden-section">
+                <h2>Sintaxe no GitHub</h2>
+                <h3>Referências cruzadas</h3>
+                <p>Em issues e em PRs, é possível referenciar outras Issues e outros PRs pelo ID.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/references-crossing.png" alt="Exemplo de referências cruzadas no GitHub">
+                    <figcaption>Exemplo de referências cruzadas no GitHub</figcaption>
+                </figure>
+                <p>Também é possivel referenciar commits pelo seu ID/Hash e outras formas:</p>
+                <figure>
+                    <img src="../../img/modules_imgs/other-references.png" alt="Outras formas de referências cruzadas no GitHub">
+                    <figcaption>Outras formas de referências cruzadas no GitHub</figcaption>
+                </figure>
+                <p>É possivel referenciar usuários com <code>@nome-do-usuario</code>.</p>
+                <p>Nos PRs e nas issues é possível criar uma lista de tarefas para acompanhar o progresso:</p>
+                <div class="terminal"><code>- [ ] Tarefa 1<br>- [x] Tarefa 2 (completa)</code></div>
+
+                <h4>Comando em barra</h4>
+                <p>É possivel fazer todas essas formatações usando atalhos/comandos de barra:</p>
+                <figure>
+                    <img src="../../img/modules_imgs/slash-commands.png" alt="Comandos em barra no GitHub">
+                    <figcaption>Comandos em barra no GitHub</figcaption>
+                </figure>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('sintax-on-github','initial-sintax')">Anterior</button>
+                    <button class="next-module" onclick="window.location.href='../modules/8-open-source.html'">Próximo módulo</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
