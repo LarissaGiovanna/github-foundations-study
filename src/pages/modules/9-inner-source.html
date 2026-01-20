@@ -45,6 +45,99 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Projetos Inner Source</h1>
+            <section id="inner-source-introduction">
+                <h2>O que são projetos Inner Source?</h2>
+                <p>Um projeto Inner Source é um projeto proprietário (é só seu/só da empresa) mas que aplica os padrões
+                    de Open Source, como código disponível para todos, com a diferença de que nem todos podem distribuir
+                    esse software.</p>
+                <p>Um projeto assim pode trazer vários benefícios, como:</p>
+                <ul>
+                    <li>Outros Devs podem ter acesso à outros códigos e olhar como que aquele grupo conseguiu resolver
+                        aquele problema</li>
+                    <li>Meio de contato onde outras pessoas podem propor soluções, e caso elas não sejam aceitas, é
+                        possivel fazer um fork para editar e desenvolver aquela solução (mods)</li>
+                    <li>Padronização de práticas (contribuição de um projeto Open Source fica igual a de um projeto
+                        Inner Source)</li>
+                </ul>
+                <p><a href="https://github.com/resources/articles/innersource?locale=pt-BR">Aqui</a> tem um artigo
+                    falando mais detalhadamente sobre softwares InnerSource e seus benefícios.</p>
+                <h3>Criando um projeto InnerSource</h3>
+                <p>O repositório deve ser colocado como Interno, e só está disponível para as pessoas que possem o
+                    GitHub Enterprise.</p>
+                <p>Após isso, é necessário configurar as permissões dos usuários que terão acesso.</p>
+                <ul>
+                    <li>Leitura/Read: recomendado para colaboradores que naõ trabalham com código e que apenas
+                        visualizam e discutem sobre o projeto.</li>
+                    <li>Triagem/Triage: recomendado para colaboradores que precisam gerenciar Issues e PRs sem o acesso
+                        de escrita</li>
+                    <li>Gravação/Write: colaboradores que editam e realizam push ativamente no projeto</li>
+                    <li>Manutenção: recomendado para gerente de projeto que precisam gerenciar o repo sem o acesso a
+                        ações confidenciais</li>
+                    <li>Admin: acesso total ao projeto.</li>
+                </ul>
+                <h3>Boas práticas</h3>
+                <ul>
+                    <li>Usar um bom nome para o repositório, como <code>comunicacao-api</code> ou
+                        <code>supply-chain-web</code></li>
+                    <li>Uma boa descrição. Geralmente uma ou duas frases é o suficiente</li>
+                    <li>Licenciar o repositório</li>
+                    <li>Incluir um README com um resumo do projeto
+                        <ul>
+                            <li>Imagens de funcionamento</li>
+                            <li>Links de apoio</li>
+                            <li>Pré-requisitos</li>
+                            <li>Como rodar</li>
+                            <li>Referências de outros projetos que este depende</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>Arquivos</h4>
+                <p><b>OBS.:</b> Se tiver mais de um README, o GitHub exibe na página inical do repositório nesta
+                    seguinte ordem de prioridade:</p>
+                <ul>
+                    <ol>Pasta <i>.github</i></ol>
+                    <ol>Pasta raiz do repositório</ol>
+                    <ol>Pasta <i>docs</i></ol>
+                </ul>
+                <a href="https://github.com/matiassingers/awesome-readme">Alguns exemplos de READMEs bem legais</a>
+                <p>Também é importante adcionar um arquivo CONTRIBUTTING.md para mostrar as pessoas como elas podem
+                    contribuir.</p>
+                <p>Também é interessante adicionar m arquivo CODEOWNERS ao repositório para definir quais indivíduos ou
+                    equipes para revisar as modificações do código. Veja esse artigo para mais informações.</p>
+                <h4>Modelos/templates prontos</h4>
+                <p>É possivel criar templates para quando uma pessoa for criar uma nova Issue ou solicitar um PR. É só
+                    criar um arquivo <code>ISSUE_TEMPLATE.md</code> e salvar na pasta .github que o GitHub já reconhece
+                    como um template para as Issues. A mesma coisa para os PRs (<code>PULL_REQUEST_TEMPLATE.md</code>).
+                </p>
+                <p><a href="https://github.com/devspace/awesome-github-templates">Aqui</a> tem um repositório com alguns
+                    templates.</p>
+
+                <h4>Fluxos de trabalho</h4>
+                <p>Especifique como que o projeto segue (como que funcionam as branches e como trabalhar nelas, como
+                    abrir os PRs, como funciona o sistema de versões)</p>
+
+                <h4>Estabelecer métricas</h4>
+                <p>É importante estabelecer métricas para saber se o projeto está encaminhando bem. Métricas com "tempo
+                    no mercado" "bugs relatados" são boas mas para o modelo InnerSource, seria mais interessante
+                    adicionar métricas que mostrem como a participação externa do público melhorou a qualidade do
+                    projeto.</p>
+                <p><a href="https://githubtraining.github.io/innersource-theory/#/measuring_success">Aqui</a> possui um
+                    artigo com mais instruções sobre um construir um projeto Inner Source com o passo a passo e boas
+                    práticas</p>
+
+                <nav class="buttons">
+                    <button class="back" onclick="window.location.href='../modules/8-open-source.html'">Módulo
+                        anterior</button>
+                    <button class="next-module"
+                        onclick="window.location.href='../modules/10-repository-security.html'">Próximo módulo</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
