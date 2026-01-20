@@ -45,6 +45,90 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Gerenciamento de projetos</h1>
+            <section id="project-introduction">
+                <h2>Configurações de projeto</h2>
+                <p>O GitHub permite que você gerencie e organize os seus projetos e oferece à sua equipe dados, linhas do tempo para organização do seu trabalho.</p>
+                <h3>Criando um projeto</h3>
+                <p>Em resumo, há uma sessão chamada Meus projetos e lá é possível criar um novo projeto. Há também a possibilidade de criar um projeto para a organização.</p>
+                <p>Mais informações sobre o passo a passo você pode encontrar <a href="https://learn.microsoft.com/pt-br/training/modules/manage-work-github-projects/3-how-to-create-project">aqui</a>.</p>
+                <h3>Organização de um projeto</h3>
+                <p>Você pode atribuir tarefas, organizar listas com o GitHub Projects, como um Kanban ou um Trello, com a diferença de que pode ser atribuido a um repositório diretamente.</p>
+                <p><a href="https://learn.microsoft.com/pt-br/training/modules/manage-work-github-projects/4-how-to-organize-your-project">Aqui</a> estão os passo a passo para executar essas atividades.</p>
+                
+                <nav class="buttons">
+                    <button class="back" onclick="window.location.href='../modules/5-introduction-to-codespace.html'">Módulo anterior</button>
+                    <button class="next" onclick="next('project-introduction','project-settings')">Próximo</button>
+                </nav>
+            </section>
+            <section id="project-settings" class="hidden-section">
+                <h2>Configurando um projeto</h2>
+                <p>Você pode mudar a visibilidade do seu projeto (público ou privado), gerenciar quem vai ter o acesso, adicionar colaboradores e etc. É bem parecido quando você vai fazer essas configurações em um repositório comum.</p>
+                <h3>Tipos de acesso</h3>
+                <p>Dependendo do projeto (organização ou pessoal), tem diferentes acessos:</p>
+                <h4>Projeto de uma organização</h4>
+                <ul>
+                    <li><i>Sem acesso</i>: Somente os proprietários e os usuários selecionados podem ver o projeto.</li>
+                    <li><i>Leitura</i>: Todos da organização podem ver o projeto.</li>
+                    <li><i>Gravação</i>: Todos da organização podem ver e editar o projeto.</li>
+                    <li><i>Administrador</i>: Todos da organização são admistradores do projeto.</li>
+                </ul>
+                <h4>Projeto pessoal</h4>
+                <ul>
+                    <li><i>Leitura</i>: A pessoa pode visualizar o projeto</li>
+                    <li><i>Gravação</i>: A pessoa pode visualizar e editar o projeto.</li>
+                    <li><i>Administrador</i>: A pessoa pode visualizar, editar e adicionar novos colaboradores ao projeto.</li>
+                </ul>
+                <p><a href="https://learn.microsoft.com/pt-br/training/modules/manage-work-github-projects/5-how-to-organize-automate-project">Aqui</a> mostra o passo a passo para fazer essas configurações e outras funcionalidades.</p>
+
+                <h3>Insights/gráficos sobre o projeto</h3>
+                <p>Ao criar um gráfico, é possivel definir os tipos, os filtros e as informações e o gráfico fica disponível para qualquer pesosa que pode visualizar o projeto.</p>
+                <p>Existem dois tipos de gráficos:</p>
+
+                <h4>Gráficos atuais</h4>
+                <p>É possivel criar gráficos atuais para, por exemplo, mostrar o número de tarefas atribuídas a cada indivíduo ou o número de probblemas atribuidos.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/actual_insight.png" alt="Exemplo de gráfico atual">
+                    <figcaption>Exemplo de gráfico atual</figcaption>
+                </figure>
+
+                <h4>Gráficos históricos</h4>
+                <p>Esses gráficos estão disponíveis para o GitHub Team e o Enterprise Coud para as organizações. Como o nome já diz, esses gráficos são baseados no tempo e exibem as tendências e o progresso do projeto ao longo do tempo.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/historical_insight.png" alt="Exemplo de gráfico histórico">
+                    <figcaption>Exemplo de gráfico histórico</figcaption>
+                </figure>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('project-settings','project-introduction')">Anterior</button>
+                    <button class="next" onclick="next('project-settings','project-automation')">Próximo</button>
+                </nav>
+            </section>
+            <section id="project-automation" class="hidden-section">
+                <h2>Automação</h2>
+                <p>É possivel automatizar todos esses gráficos com GitHub Actions e API GraphQL, por exemplo.</p>
+                <h4>Fluxos de trabalho integrados</h4>
+                <p>É a maneira mais fácil de automatizar os gráficos. O projeto recebe Issues ou PRs e automaticamente coloca como tarefas pendentes, por exemplo.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/instructions-automation-1.png" alt="Instruções para automação parte 1">
+                    <img src="../../img/modules_imgs/instructions-automation-2.png" alt="Instruções para automação parte 2">
+                    <figcaption>Instruções para automação</figcaption>
+                </figure>
+
+                <h4>GitHub Actions</h4>
+                <p>O Actions permite maior personalização. É possivel usar o Actions para criar fluxos de trabalho, onde cada fluxo pode contem uma série de tarefas que são executadas toda vez que o fluxo é executado.</p>
+                <p>Um exemplo de fluxo de fluxo de trabalho pode ser na criação de um problema que automaticamente é adicionado em uma categoria, deixa um comentário e move o problema para algum quadro do projeto.</p>
+                <p><a href="https://docs.github.com/pt/issues/planning-and-tracking-with-projects/automating-your-project/automating-projects-using-actions">Este artigo</a> mostra em detalhes como automatizar com o Actions.</p>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('project-automation','project-settings')">Anterior</button>
+                    <button class="next-module" onclick="window.location.href='../modules/7-introduction-to-markdown.html'">Próximo módulo</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
