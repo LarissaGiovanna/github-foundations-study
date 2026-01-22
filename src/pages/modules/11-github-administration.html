@@ -45,6 +45,109 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Administração do GitHub</h1>
+            <section id="introduction">
+                <h2>Objetivo</h2>
+                <p>Como um admin, o seu objetivo é apenas manter tudo funcionando sem problemas para os usuários.</p>
+                <h3>Equipes</h3>
+                <p>É possível criar equipes/teams na sua organização com permissões de acesso.</p>
+                <p>O GitHub permite que você sincronize as equipes com gruops de IdP (provedores de identidade), como o Microsoft Entra ID. Com essa sincronização, você pode gerenciar tarefas, gerenciar a integração de noos membros, novas permissões e etc. (OBS.: Esse reurso só fucniona se você tiver o GitHub enterprise Cloud e um domínio verificado.)</p>
+                <p>Os membros de uma equipe com permissões de Mantenedor de equipe ou Administrador do repositório podem:</p>
+                <ul>
+                    <li>Criar uma nova equipe e alterar as existentes</li>
+                    <li>Excluir ou renomear uma equipe</li>
+                    <li>Adicionar membros da organição a uma equipe ou removê-los</li>
+                    <li>Sincronizar a associação de uma equipe a um grupo do IdP</li>
+                    <li>Adicionar colaboradores externos (pessoas que não são membros explicitamente da sua organização) a repositórios da equipe</li>
+                    <li>Habilitar ou desabilitar as discussões na página da equipe</li>
+                    <li>Alterar a visibilidade da equipe dentro da organização</li>
+                    <li>Gerenciar a atribuição de revisão de código automática para as solicitações de PRs</li>
+                    <li>Agendar lembretes</li>
+                    <li>Alterar a imagem de perfil da equipe</li>
+                </ul>
+                <h4>Boas práticas</h4>
+                <ul>
+                    <li>Criar equipes alinhadas com a hierarquia do grupo ou da empresa (trazendo o mundo real para o virtual)</li>
+                    <li>Simplificar processos de revisão de PR criando equipes com base nos interesses ou numa tecnologia específica e os individuos podem optar por participar dessas equipes de acordo com os seus interesses ou habilidades técnicas.</li>
+                    <li>Sincronizar as equipes do GitHub com o seu IdP.</li>
+                </ul>
+                <h3>Organização</h3>
+                <p>Os membros de uma organização com permissões de proprietários podem:</p>
+                <ul>
+                    <li>Convidar usuários para entrar na organização ou remover eles</li>
+                    <li>Organizar os usuários em uma equipe e conceder perissões de mantenedor de equipe aos membros da organização</li>
+                    <li>Adicionar colaboradores externos a repositórios</li>
+                    <li>Conceder níveis de permissão de repositorio a determinados repositórios</li>
+                    <li>Configurar a segurança da organização</li>
+                    <li>Configurar a cobrança ou atribuir um gerente de cobrança para a organização</li>
+                    <li>Extrair vários tipos de informações sobre os repositórios por meio de scripts</li>
+                </ul>
+                <p><b>OBS.: </b>É recomendavel configurar apenas uma organização para os seus usuários e repositórios. Se por algum motivo seja obrigatório a criação de mais de uma organização, você deve saber que:</p>
+                <ul>
+                    <li>Não é possivel duplicar uma organização ou compartilhar configurações entre duas organizações</li>
+                    <li>Dependendo das politicas dos provedores de software, pode acontecer de ter custos adicionar se precisar instalar alguns aplicativos em varias organizaçãoes</li>
+                    <li>Gerenciar varias organizações é bem mais complexo</li>
+                </ul>
+
+                <h3>Enterprise</h3>
+                <p>Os membros de uma empresa que possui o GitHub Enterprise Cloud e Server que possuem as permissões de proprietarios podem:</p>
+                <ul>
+                    <li>Habilitar o logon único da SAML para a sua conta corporativa, permitindo que cada membro vincule sua identidade externa em seu IdP à conta do GitHub</li>
+                    <li>Adicionar ou remover organizações da empresa</li>
+                    <li>Configurar a cobrança ou atribuir um gerente de cobrança a todas as organizações na empresa</li>
+                    <li>Configurar as politicas e outras configurações que se aplicam a todas as organizações, repositorios e membros da empresa</li>
+                    <li>Extrair varios tipos de informações sobre as organizações por meio de scripts</li>
+                    <li>Usar o GitHub Connect para integrar o GitHub Enterprise Server ao GitHub.com</li>
+                </ul>
+                <nav class="buttons">
+                    <button class="back" onclick="window.location.href='../modules/10-repository-security.html'">Módulo anterior</button>
+                    <button class="next" onclick="next('introduction','authentication')">Próximo</button>
+                </nav>
+            </section>
+            <section id="authentication" class="hidden-section">
+                <h2>Gerenciar a autenticação dos usuários no GitHub</h2>
+                <h3>Nome e senha</h3>
+                <p>Os admins podem permitir que os usuários façam login usando o método padrão. Mas, o GitHub não dá mais suporte à autenticação de senha para operações git ou para o uso da API.</p>
+                <h3>Tokens de acesso pessoal (PATs)</h3>
+                <p>Essa é uma alternativa mais segura ao uso de senha ao usar a API do GitHub ou a linha de comando.</p>
+                <p>Os usuários devem gerar um token por meio da opção de configurações do GitHub e vinculam as permissões de token a um repositório ou a uma organização.</p>
+                <p>Quando eles quiserem interagir com a linha de comando do git, por exemplo, eles podem inserir o token quando lhes fores solicitados o nome de usuários e a senha.</p>
+                <h3>Chaves SSH</h3>
+                <p>Os usuáarios podem se conectar a servidores e serviços remotos e se autenticar por meio de SSH.</p>
+                <p>Ao configurar o SSH, os usuários geram uma chave SSH, adicionam-na ao ssh-agent e, em seguida, adicionam a chave à sua conta do GitHub. Adicionar a chave SSH ao agente SSH garante que ela tenha uma frase secreta como camada extra de segurança. Os usuários podem configurar a cópia local do Git deles para fornecer a frase secreta automaticamente, ou podem fornecê-la manualmente sempre que usarem a ferramenta de linha de comando do Git para interagir com o GitHub.</p>
+                <p>Você pode usar chaves SSH com um repositório de uma organização que utiliza o login unico SSO via SAML.</p>
+                <h3>Deploy keys/Chaves de implantação</h3>
+                <p>Essas chaves são um outro tipo de chave SSH que permite o usuário acesso a apenas a um repositório.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/deploy-keys-section.png" alt="Seção de chaves de implantação">
+                    <figcaption>Seção de chaves de implantação</figcaption>
+                </figure>
+                <h3>Autenticação de dois fatores (2FA)</h3>
+                <p>Essa autenticação também conhecida como autenticação multifator (MFA), adiciona uma camada extra de proteção à seua conta do Github.</p>
+                <p>É possivel impor a autenticação para os membros da empresa.</p>
+                <p><b>OBS.: </b></p>
+                <ul>
+                    <li>Para organizações no GitHub Team e no GitHub Enterprise Cloud, é possivel exigir que os membros, colaboradores externos habilitem esssa autenticação para suas contas pessoais.</li>
+                    <li>Para EMUs (Usuários Gerenciados corporativos) e GitHub Enterprise Server, os admins podem exigir para somente contas gerenciadas por empresas, mas não pdem impor para as contas pessoais dos usuários.</li>
+                </ul>
+                <figure>
+                    <img src="../../img/modules_imgs/two-factor-auth.png" alt="Obrigação da autenticação de dois fatores">
+                    <figcaption>Obrigação da autenticação de dois fatores</figcaption>
+                </figure>
+                <h3>SSO do SAML</h3>
+                <p>Você pode configurar o SSO do SAML para proteger acesso aos recursos da sua organização, como repositórios, issues, PRs, etc. Ao tentar acessar esses recursos, GitHub redireciona os usuários para autenticar com o IdP da sua organização.</p>
+                <p>O GitHub dá suporte à provedores que implemenam o padão SAML 2.0.</p>
+                <h3>LDAPL (Lightweight Directory Acess Protocol)</h3>
+                <p>Disponivel apenas para o GitHub Enterprise Server.</p>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('authentication','introduction')">Anterior</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
