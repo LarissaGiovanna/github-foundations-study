@@ -45,6 +45,68 @@
             <a href="../about.html">Sobre</a>
         </nav>
     </header>
+    <main>
+        <article class="module-content">
+            <h1>Segurança de um Repositório</h1>
+            <section id="introduction">
+                <h2>Introdução</h2>
+                <p>A segurança de um projeto é muito importante. O desenvolvimento seguro deve fazer parte de todos os estágios do ciclo de vida de desenvolvimento de software, ou seja, deve ser implementada junto da criação do programa. Os testes de segurança devem fazer parte dos processos de entrega diários.</p>
+                <p>Para isso, nos repositórios, existe uma aba chamada Segurança e que possui dversas funcionalidades, como:</p>
+                <ul>
+                    <li>Políticas de segurança que permite especificar como relatar uma vulnerabilidade de segurança no projeto adicionando um <a href="https://docs.github.com/pt/code-security/getting-started/adding-a-security-policy-to-your-repository">arquivo</a> <code>SECURITY.md</code>.</li>
+                    <li>Alertas do Dependabot que notificam quando o seu repositório usa uma dependência vulnerável ou malware.</li>
+                    <li>Verificação de código</li>
+                    <li>Varredura de segredos que detecta tokens, credenciais e segredos que foram comprometidos no seu repositório antes de fazer um push.</li>
+                    <li>Outros avisos de segurança</li>
+                </ul>
+                <h3>Ignorar arquivos confidenciais</h3>
+                <p>É possível ignorar arquivos confidenciais incluindo eles em um arquivo chamado <code>.gitignore</code>. O GitHub oferece <a href="https://github.com/github/gitignore">arquivos <code>.gitignore</code> padrões</a> para projetos.</p>
+                <p>É importante ficar de olho para não enviar um arquivo confidencial "sem querer" para o reposiorio no GitHub, pois mesmo que seja removido, as alterações ainda ficam no histórico.</p>
+                <p>Mesmo assim, é possível reescrever o histórico com alguns <a href="https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">métodos</a>.</p>
+                <h4>Proteção de branches</h4>
+                <p>É possível criar uma regra e proteger uma branch específica, impondo uma revisão de aprovação ou verificações para os PRs antes de fazer o merge.</p>
+                <p>Você pode:</p>
+                <ul>
+                    <li>Executar uma build para verificar se aquela branch pode receber alterações de código</li>
+                    <li>Verificar de há erros de digitação e conformidade</li>
+                    <li>Testes automatizados para verificar se há alterações de comportamento do codigo</li>
+                </ul>
+                <h4>Revisores em solicitações de PR</h4>
+                <p>É possivel adicionar pessoas específicas para revisar as solicitações antes de mesclar coma branch.</p>
+                <h4>Arquivo CODEOWNERS</h4>
+                <p>Atribua membros ou equipes para revisar os códigos enviados, como nesse exemplo:</p>
+                <figure>
+                    <img src="../../img/modules_imgs/codeowners-code.png" alt="Código de exemplo do arquivo CODEOWNERS">
+                    <figcaption>Exemplo de arquivo CODEOWNERS</figcaption>
+                </figure>
+
+                <nav class="buttons">
+                    <button class="back" onclick="window.location.href='../modules/9-inner-source.html'">Módulo anterior</button>
+                    <button class="next" onclick="next('introduction','auto')">Próximo</button>
+                </nav>
+            </section>
+            <section id="auto" class="hidden-section">
+                <h2>Automação da segurança</h2>
+                <h3>Grafos de dependências</h3>
+                <p>Por padrão, o GitHub pode mostrar um grafo mostrando as dependencias daquele projeto, buscando em arquivos como <code>package.json</code>, <code>requirements.txt</code>, e etc.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/dependency-graph.png" alt="Exemplo de grafo de dependências no GitHub">
+                    <figcaption>Exemplo de grafo de dependências no GitHub</figcaption>
+                </figure>
+                <h3>Alertas do Dependabot</h3>
+                <p>O Dependabot verifica se há algum problema de vulnerabilidade e cria uma solicitação de pull para que o desenvolvedor veja essa vulnerabilidade e conserte.</p>
+                <figure>
+                    <img src="../../img/modules_imgs/dependabot-warning.png" alt="Exemplo de alerta do Dependabot no GitHub">
+                    <figcaption>Exemplo de alerta do Dependabot no GitHub</figcaption>
+                </figure>
+
+                <nav class="buttons">
+                    <button class="back" onclick="back('auto','introduction')">Anterior</button>
+                    <button class="next-module" onclick="window.location.href='../modules/11-github-administration.html'">Próximo módulo</button>
+                </nav>
+            </section>
+        </article>
+    </main>
     <footer>
         <nav class="links">
             <section>
