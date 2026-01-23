@@ -30,3 +30,23 @@ function next(current, next){
         nextSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+const ptBR = document.getElementById("PT-BR");
+const enUS = document.getElementById("EN-US");
+ptBR.addEventListener("click", () => setLanguage("PT-BR"));
+enUS.addEventListener("click", () => setLanguage("EN-US"));
+
+function setLanguage(language) {
+    fetch('src/js/languages_home.json')
+        .then(response => response.json())
+        .then(data => {
+            const texts = data[language];
+            for (const key in texts) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = texts[key];
+                    console.log(texts[key]);
+                }
+            }
+        });
+}

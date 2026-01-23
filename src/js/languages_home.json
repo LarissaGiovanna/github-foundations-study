@@ -1,0 +1,170 @@
+{
+    "PT-BR": {
+        "subtitle": "Guia de Estudo",
+
+        "menuA1": "Início",
+        "menuA2": "Exercícios",
+        "menuA3": "Acessar o GitHub",
+        "menuA4": "Sobre",
+
+        "menuA1Desktop": "Início",
+        "menuA2Desktop": "Exercícios",
+        "menuA3Desktop": "Acessar o GitHub",
+        "menuA4Desktop": "Sobre",
+        
+        "textContainerH1": "Prepare-se",
+        "textContainerP": "Este guia de estudo foi elaborado para ajudar você a se preparar para o exame de certificação GitHub Foundations. Ele cobre os principais tópicos e conceitos que você precisa entender para ter sucesso no exame.",
+        "textStartHere": "Comece por aqui",
+        
+        "moduleText1H3": "Introdução ao Git e GitHub",
+        "moduleText1P": "Aprenda os conceitos básicos do Git e do GitHub, incluindo controle de versão, repositórios, commits e branches.",
+        "module1TextButton": "Começar módulo",
+        
+        "moduleText2H3": "Produtos do GitHub",
+        "moduleText2P": "Aprenda sobre os diferentes produtos e serviços oferecidos pelo GitHub, como GitHub Actions, GitHub Packages e GitHub Security.",
+        "module2TextButton": "Começar módulo",
+        
+        "moduleText3H3": "Varredura e Segurança de código",
+        "moduleText3P": "Aprenda sobre as práticas e ferramentas de varredura e segurança disponíveis no GitHub para proteger seus projetos.",
+        "module3TextButton": "Começar módulo",
+        
+        "moduleText4H3": "Introdução ao Copilot",
+        "moduleText4P": "Aprenda os conceitos básicos do Copilot, incluindo como ele pode ajudar a aumentar sua produtividade na programação.",
+        "module4TextButton": "Começar módulo",
+       
+        "moduleText5H3": "Introdução ao Codespaces",
+        "moduleText5P": "Aprenda como funciona o GitHub Codespaces e como é possível utilizá-lo para melhorar seu fluxo de trabalho.",
+        "module5TextButton": "Começar módulo",
+       
+        "moduleText6H3": "Gerenciamento de Projetos",
+        "moduleText6P": "Aprenda sobre as ferramentas e técnicas de gerenciamento de projetos disponíveis no GitHub para organizar e acompanhar o progresso do seu trabalho.",
+        "module6TextButton": "Começar módulo",
+        
+        "moduleText7H3": "Introdução ao Markdown",
+        "moduleText7P": "Aprenda os conceitos básicos do Markdown, incluindo como criar documentos formatados de forma simples e eficiente.",
+        "module7TextButton": "Começar módulo",
+        
+        "moduleText8H3": "Projetos Open Source",
+        "moduleText8P": "Aprenda sobre como contribuir em projetos open source, incluindo práticas recomendadas e como colaborar efetivamente com a comunidade.",
+        "module8TextButton": "Começar módulo",
+        
+        "moduleText9H3": "Projetos Inner Source",
+        "moduleText9P": "Aprenda sobre como aplicar práticas open source dentro da sua organização para melhorar a colaboração e a qualidade do software.",
+        "module9TextButton": "Começar módulo",
+        
+        "moduleText10H3": "Segurança do Repositório",
+        "moduleText10P": "Aprenda práticas para garantir a segurança dos seus repositórios no GitHub, incluindo gerenciamento de permissões e proteção de branches.",
+        "module10TextButton": "Começar módulo",
+        
+        "moduleText11H3": "Administração do GitHub",
+        "moduleText11P": "Aprenda sobre as práticas e ferramentas para administrar efetivamente o GitHub na sua organização, incluindo gerenciamento de equipes e configurações avançadas.",
+        "module11TextButton": "Começar módulo",
+       
+        "exerciceContainerH2": "Pratique seus conhecimentos",
+        "exerciceTextH3": "Exercícios Práticos",
+        "exerciceTextP": "Teste seus conhecimentos com exercícios práticos relacionados aos módulos estudados. Reforce o aprendizado e prepare-se para o exame de certificação.",
+        "exerciceButton": "Começar exercícios",
+        
+        "testTextH3": "Simulado de Exame",
+        "testTextP": "Faça um simulado do exame de certificação GitHub Foundations para avaliar seu conhecimento e identificar áreas que precisam de mais estudo.",
+        "testButton": "Começar simulado",
+        
+        "examContainerH2": "Fazer a prova de certificação",
+        "examInfoP": "Quando você se sentir preparado, inscreva-se para o exame de certificação GitHub Foundations. O exame é online e pode ser feito no seu próprio ritmo.",
+        "pricingP": "O exame é pago, e o valor pode variar dependendo da sua localização. Porém, ao se inscrever no programa do GitHub Education, o estudante ganha um voucher exclusivo para realizar a prova de forma gratuita.",
+        "educationLink": "Saiba mais sobre o GitHub Education",
+        "startLink": "Inscrever-se para a prova",
+       
+        "whyContainerH2": "Por que obter a certificação GitHub Foundations?",
+        "explanationP": "Obter a certificação GitHub Foundations demonstra seu conhecimento e habilidades no uso do GitHub, uma das plataformas de desenvolvimento mais populares do mundo. Isso pode abrir portas para novas oportunidades de carreira, aumentar sua credibilidade profissional e ajudá-lo a se destacar no mercado de trabalho.",
+       
+        "footerA1": "Sobre",
+        "footerA2": "GitHub Learn (inspiração Design)",
+        "footerA3": "Microsoft Learn (conteúdos)",
+        "footerA4": "Perfil GitHub"
+    },
+    "EN-US": {
+        "subtitle": "Study Guide",
+        
+        "menuA1": "Home",
+        "menuA2": "Exercises",
+        "menuA3": "Access GitHub",
+        "menuA4": "About",
+
+        "menuA1Desktop": "Home",
+        "menuA2Desktop": "Exercises",
+        "menuA3Desktop": "Access GitHub",
+        "menuA4Desktop": "About",
+        
+        "textContainerH1": "Get Ready",
+        "textContainerP": "This study guide is designed to help you prepare for the GitHub Foundations certification exam. It covers the key topics and concepts you need to understand to succeed in the exam.",
+        "textStartHere": "Start here",
+       
+        "moduleText1H3": "Introduction to Git and GitHub",
+        "moduleText1P": "Learn the basics of Git and GitHub, including version control, repositories, commits, and branches.",
+        "module1TextButton": "Start module",
+        
+        "moduleText2H3": "GitHub Products",
+        "moduleText2P": "Learn about the different products and services offered by GitHub, such as GitHub Actions, GitHub Packages, and GitHub Security.",
+        "module2TextButton": "Start module",
+        
+        "moduleText3H3": "Code Scanning and Security",
+        "moduleText3P": "Learn about the code scanning and security practices and tools available on GitHub to protect your projects.",
+        "module3TextButton": "Start module",
+       
+        "moduleText4H3": "Introduction to Copilot",
+        "moduleText4P": "Learn the basics of Copilot, including how it can help boost your programming productivity.",
+        "module4TextButton": "Start module",
+        
+        "moduleText5H3": "Introduction to Codespaces",
+        "moduleText5P": "Learn how GitHub Codespaces works and how you can use it to improve your workflow.",
+        "module5TextButton": "Start module",
+        
+        "moduleText6H3": "Project Management",
+        "moduleText6P": "Learn about the project management tools and techniques available on GitHub to organize and track your work progress.",
+        "module6TextButton": "Start module",
+       
+        "moduleText7H3": "Introduction to Markdown",
+        "moduleText7P": "Learn the basics of Markdown, including how to create formatted documents in a simple and efficient way.",
+        "module7TextButton": "Start module",
+     
+        "moduleText8H3": "Open Source Projects",
+        "moduleText8P": "Learn about how to contribute to open source projects, including best practices and how to effectively collaborate with the community.",
+        "module8TextButton": "Start module",
+       
+        "moduleText9H3": "Inner Source Projects",
+        "moduleText9P": "Learn about how to apply open source practices within your organization to improve collaboration and software quality.",
+        "module9TextButton": "Start module",
+        
+        "moduleText10H3": "Repository Security",
+        "moduleText10P": "Learn practices to ensure the security of your repositories on GitHub, including permission management and branch protection.",
+        "module10TextButton": "Start module",
+      
+        "moduleText11H3": "GitHub Administration",
+        "moduleText11P": "Learn about the practices and tools to effectively administer GitHub in your organization, including team management and advanced settings.",
+        "module11TextButton": "Start module",
+      
+        "exerciceContainerH2": "Practice your skills",
+        "exerciceTextH3": "Practical Exercises",
+        "exerciceTextP": "Test your knowledge with practical exercises related to the studied modules. Reinforce learning and prepare for the certification exam.",
+        "exerciceButton": "Start exercises",
+        
+        "testTextH3": "Exam Simulator",
+        "testTextP": "Take a simulator of the GitHub Foundations certification exam to assess your knowledge and identify areas that need more study.",
+        "testButton": "Start simulator",
+     
+        "examContainerH2": "Take the certification exam",
+        "examInfoP": "When you feel ready, sign up for the GitHub Foundations certification exam. The exam is online and can be taken at your own pace.",
+        "pricingP": "The exam is paid, and the price may vary depending on your location. However, by enrolling in the GitHub Education program, students receive an exclusive voucher to take the exam for free.",
+        "educationLink": "Learn more about GitHub Education",
+        "startLink": "Sign up for the exam",
+       
+        "whyContainerH2": "Why get the GitHub Foundations certification?",
+        "explanationP": "Obtaining the GitHub Foundations certification demonstrates your knowledge and skills in using GitHub, one of the most popular development platforms in the world. This can open doors to new career opportunities, increase your professional credibility, and help you stand out in the job market.",
+       
+        "footerA1": "About",
+        "footerA2": "GitHub Learn (design inspiration)",
+        "footerA3": "Microsoft Learn (content)",
+        "footerA4": "GitHub Profile"
+    }
+}
